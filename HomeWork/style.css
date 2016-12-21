@@ -17,7 +17,7 @@ body {
     margin: 0 auto;
     height: 40px;
     text-align: center;
-    padding-top: 40px;
+    padding: 20px;
 }
 
 #header #selected {
@@ -26,17 +26,32 @@ body {
 
 #center {
     width: 1600px;
-    margin: 100px 20px;
+    margin: 50px 20px;
+}
+
+#content span {
+    padding: 0 20px;
+}
+
+#content a {
+    color: #4d4d4d;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: left;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
 }
 
 #header a {
     color: #4d4d4d;
     font-size: 30px;
-    font-weight: 150;
+    font-weight: 200;
     text-align: left;
     text-decoration: none;
-    height: 50px;
-    line-height: 10px;
+    height: 80px;
+    line-height: 30px;
     display: inline-block;
 }
 
@@ -50,20 +65,26 @@ body {
 
 
 #content img {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: 10px;
-    width: 389px;
-    border-radius: 40%;
+    width:400px;
+    border-radius: 60%;
 }
 
 #content #box_text {
     width: 1000px;
     background-color: #ffffff;
     float: right;
-    padding: 80px 80px 51px 76px;
+    padding: 80px 80px 51px 80px;
     margin-bottom: 100px;
 }
-
+#content  p {
+    color: #242424;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin: 20px;
+}
 #content #box_text p {
     color: #242424;
     font-size: 24px;
