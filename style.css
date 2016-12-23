@@ -63,7 +63,7 @@ body {
 }
 
 #content img {
-    margin-top: 0px;
+    margin-top: .0em;
     margin-left: 10px;
     width: 400px;
     border-radius: 60%;
