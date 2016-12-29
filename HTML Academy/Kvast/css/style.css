@@ -1,13 +1,11 @@
 body{
   margin: auto;
-    padding: 0px 500px 0px 500px;
 }
 .page-header,
 .page-footer {
   padding: 20px;
   background-color: #eeeeee;
     border-radius: 50px;
-    margin: 30px;
 }
 
 .page-footer {
@@ -19,19 +17,21 @@ body{
   border-collapse: collapse;
 }
 
-.price-list th {
-  font-weight: normal;
-  text-align: left;
+.history img,p{
+padding-left: 40px;
 }
 
-.price-list td {
-  border: 1px solid #333333;
+.press p,a{
+  padding-left: 40px;
 }
 
-.price-list th,
-.price-list td {
-  padding: 5px 10px;
-}
+
+
+
+
+
+
+
 
 .price-list .price-number {
   text-align: center;
