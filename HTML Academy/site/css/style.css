@@ -1,7 +1,13 @@
+body{
+  margin: auto;
+    padding: 0px 500px 0px 500px;
+}
 .page-header,
 .page-footer {
-  padding: 10px;
+  padding: 20px;
   background-color: #eeeeee;
+    border-radius: 50px;
+    margin: 30px;
 }
 
 .page-footer {
