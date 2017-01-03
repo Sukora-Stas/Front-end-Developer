@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>HomeWork</title>
-
+<style>
+    body{
+        padding-right: 50%
+    }
+    .header{
+        text-align: center;
+        padding: 20px;
+        background-color: deepskyblue;
+        color: black;
+    }
+.left-item{
+    background: url('1.png') left top repeat-y;
+}
+    .left-poss{
+        width: 153px; float: left;
+    }
+    .center{
+        text-align: center;
+    }
+    .ball{
+        background: url('Ball.png') top right repeat-y;
+    }
+    .article{
+        overflow: hidden; margin-left: 175px;
+    }
+    .img{
+        float: left;
+        margin-right: 20px;
+    }
+    .footer{
+        text-align: center;
+        clear: both;
+        padding: 20px;
+        background-color: deepskyblue;
+        color: black;
+    }
+</style>
 </head>
-<body style="padding-right: 50%">
-<div style="text-align: center; padding: 20px; background-color: deepskyblue; color: black">ПРИВЕТ УЧАСТНИКОМ
+<body>
+<div class="header">ПРИВЕТ УЧАСТНИКОМ
     СОРЕВНОВАНИЯ!
 </div>
-
-<div style="background: url('1.png') left top repeat-y;">
-    <div style="width: 153px; float: left;">
-        <p style="text-align: center"><b>Виды спорта:</b></p>
+<div class="left-item">
+    <div class="left-poss">
+        <p class="center"><b>Виды спорта:</b></p>
         <ul>
             <li><a href="#" target="_blank">конькобежный спорт</a></li>
             <li><a href="#" target="_blank">битлон</a></li>
@@ -26,11 +61,10 @@
             <li><a href="#" target="_blank">шашки</a></li>
         </ul>
     </div>
-    <div style="background: url('Ball.png') top right repeat-y;">
-        <article style="overflow: hidden; margin-left: 175px; ">
-            <h3 style="text-align: center">ФУТБОЛ</h3>
-            <img src="2.png" height="134" width="200" title="Футбол" alt="Здесь должна быть картинка"
-                 style="float: left; margin-right: 20px;">
+    <div class="ball">
+        <article class="article">
+            <h3 class="center">ФУТБОЛ</h3>
+            <img src="2.png" height="134" width="200" class="img">
             <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими
                 частями тела (кроме рук) большее количество раз, чем команда соперника.
             </p>
@@ -42,7 +76,7 @@
                 игры.
             </p>
         </article>
-        <div style="text-align: center; clear: both; padding: 20px; background-color: deepskyblue; color: black">ГЛАВНОЕ
+        <div class="footer">ГЛАВНОЕ
             НЕ ПОБЕА, А УЧАСТИЕ!
         </div>
     </div>
