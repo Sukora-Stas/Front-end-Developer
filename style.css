@@ -167,12 +167,3 @@ body {
 #footer a {
     color: inherit;
 }
-
-.ol{
-    list-style-type: disc;
-    font: italic bold 25px/200% Arial;
-}
-.ul{
-    list-style-type: circle;
-    font: italic bold 20px/200% Arial;
-}
