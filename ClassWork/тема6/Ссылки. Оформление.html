@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0216)ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/links.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+             
+            <title>Ссылки. Оформление</title> 
+<style type="text/css">
+	p {
+        border: 1px solid lightgrey;
+        border-radius: 0 .5em;
+        padding: .3em;
+        margin: .2em;
+        width: 31.5%;
+        float: left;
+    }
+    h3 {
+        clear: left;
+        text-align: center;
+    }
+    ul {
+        width: 14em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p::selection {color: white}
+    p::first-line {color: red}
+    p::first-letter {font-weight: bolder;}
+    /*#################################*/
+    h2 {counter-reset: count}
+    p::before {
+        counter-increment: count;
+        content: 'Глава 'counter(count)'. ';
+        font-weight: bolder; 
+    }
+    /*#################################*/
+    a[href^="https://"] {
+		background-image: url('pic/extref.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 15px;
+	}
+	p a[href$=".doc"]::after,
+	li a[href$=".doc"]:hover::after
+	{
+		content: url('pic/logo-doc.jpg');
+	}
+	h2~ul>li {text-decoration: line-through;}
+</style>	
+        </head> 
+        <body>
+        <h2>Форматы файлов.</h2>
+        <p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_black">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.doc">Документ MS Word</a>
+        </p>
+
+
+		<p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_black">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+		<br>
+        <a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.pdf">Документ PDF</a>
+        </p>
+
+		<p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_black">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+		<br>
+        <a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.zip">Архив</a>
+        </p>
+        <h3>Это список из файлов</h3>
+        <ul>
+        	<li><a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.doc">Документ MS Word</a></li>
+        	<li><a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.pdf">Документ PDF</a></li>
+        	<li><a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.zip">Архив</a></li>
+        </ul>
+<h2>Форматы файлов.</h2>
+        <p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_black">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.doc">Документ MS Word</a>
+        </p>
+
+
+        <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_black">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+        <br>
+        <a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.pdf">Документ PDF</a>
+        </p>
+
+        <p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_black">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+        <br>
+        <a href="ftp://178.124.206.34/pub/FE/%D0%A2%D0%B5%D0%BC%D0%B0%205.%20%D0%92%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2.%20%D0%A1%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%8B/files/document.zip">Архив</a>
+        </p>
+
+
+
+
+         
+ </body></html>
