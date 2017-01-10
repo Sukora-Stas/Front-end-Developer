@@ -5,6 +5,25 @@
     <title>FULL ClassWork</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        ol {
+            counter-reset: theme;
+        }
+
+        ul {
+            counter-reset: theme;
+        }
+
+        ol > li::before {
+            counter-increment: theme;
+            content: 'Тема ' counter(theme);
+        }
+
+        ol li ul > li::before {
+            counter-increment: theme;
+            content: 'Задание ' counter(theme);
+        }
+    </style>
 </head>
 <body>
 <div id="content">
@@ -21,11 +40,11 @@
 
             <ol style=" list-style-type: disc; font: italic bold 25px/200% Arial;">
                 <li>
-                    Тема 1. Введение в HTML. Ссылки
+                    Введение в HTML. Ссылки
                     <ul style="list-style-type: circle; font: italic bold 20px/200% Arial;">
                         <li>
-                            Задание 1: <a href="http://fe.it-academy.by/Sites/0020528/Theme1/animal_language.html"
-                                          target="_blank">animal_language</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme1/animal_language.html"
+                               target="_blank">animal_language</a>
                         </li>
                     </ul>
                 </li>
@@ -33,15 +52,15 @@
 
 
                 <li>
-                    Тема 2. Изображения. Введение в CSS
+                    Изображения. Введение в CSS
                     <ul style="list-style-type: circle; font: italic bold 20px/200% Arial;">
                         <li>
-                            Задание 1: <a href="http://fe.it-academy.by/Sites/0020528/Theme2/RedArmy.html"
-                                          target="_blank">Дневник партизана</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme2/RedArmy.html"
+                               target="_blank">Дневник партизана</a>
                         </li>
                         <li>
-                            Задание 2: <a href="http://fe.it-academy.by/Sites/0020528/Theme2/simon_garfunkel.html"
-                                          target="_blank">Simon and Garfunkel</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme2/simon_garfunkel.html"
+                               target="_blank">Simon and Garfunkel</a>
                         </li>
                     </ul>
                 </li>
@@ -49,27 +68,27 @@
 
 
                 <li>
-                    Тема 3. Цвет. Шрифт. Границы. Размеры
+                    Цвет. Шрифт. Границы. Размеры
                     <a style="font-size:15px; height: 20px">начало занятий (16.12.2016)</a>
                     <ul style="list-style-type: circle; font: italic bold 20px/200% Arial;">
                         <li>
-                            Задание 1: <a href="http://fe.it-academy.by/Sites/0020528/Theme3/Letter.html"
-                                          target="_blank">Letter</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme3/Letter.html"
+                               target="_blank">Letter</a>
                         </li>
                         <li>
-                            Задание 2: <a
-                                href="http://fe.it-academy.by/Sites/0020528/Theme3/SimonandGarfunker_color.html"
-                                target="_blank">Simon and Garfunker_color</a>
+                            <a
+                                    href="http://fe.it-academy.by/Sites/0020528/Theme3/SimonandGarfunker_color.html"
+                                    target="_blank">Simon and Garfunker_color</a>
                         </li>
                         <li>
-                            Задание 3: <a
-                                href="http://fe.it-academy.by/Sites/0020528/Theme3/SimonandGarfunker_fonts.html"
-                                target="_blank">Simon and Garfunker_fonts</a>
+                            <a
+                                    href="http://fe.it-academy.by/Sites/0020528/Theme3/SimonandGarfunker_fonts.html"
+                                    target="_blank">Simon and Garfunker_fonts</a>
                         </li>
                         <li>
-                            Задание 4: <a
-                                href="http://fe.it-academy.by/Sites/0020528/Theme3/SimonandGarfunker_border.html"
-                                target="_blank">Simon and Garfunker_border</a>
+                            <a
+                                    href="http://fe.it-academy.by/Sites/0020528/Theme3/SimonandGarfunker_border.html"
+                                    target="_blank">Simon and Garfunker_border</a>
                         </li>
                     </ul>
                 </li>
@@ -77,81 +96,90 @@
 
 
                 <li>
-                    Тема 4. Отступы. Фон. Таблицы
+                    Отступы. Фон. Таблицы
                     <ul style="list-style-type: circle; font: italic bold 20px/200% Arial;">
                         <li>
-                            Задание 1: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/border.html"
-                                          target="_blank">border</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/border.html"
+                               target="_blank">border</a>
                         </li>
                         <li>
-                            Задание 2: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/border-radius.html"
-                                          target="_blank">border-radius</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/border-radius.html"
+                               target="_blank">border-radius</a>
                         </li>
                         <li>
-                            Задание 3: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/SimonandGarfunker.html"
-                                          target="_blank">Simon and Garfunker</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/SimonandGarfunker.html"
+                               target="_blank">Simon and Garfunker</a>
                         </li>
                         <li>
-                            Задание 4: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/23_16_2016/IMAGE.html"
-                                          target="_blank">IMAGE</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/23_16_2016/IMAGE.html"
+                               target="_blank">IMAGE</a>
                         </li>
                         <li>
-                            Задание 5: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/23_16_2016/moon.html"
-                                          target="_blank">moon</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/23_16_2016/moon.html"
+                               target="_blank">moon</a>
                         </li>
                         <li>
-                            Задание 6: <a
-                                href="http://fe.it-academy.by/Sites/0020528/Theme4/23_16_2016/Simon_and_Garfunker_background.html"
-                                target="_blank">Simon and Garfunker_background</a>
+                            <a
+                                    href="http://fe.it-academy.by/Sites/0020528/Theme4/23_16_2016/Simon_and_Garfunker_background.html"
+                                    target="_blank">Simon and Garfunker_background</a>
                         </li>
                         <li>
-                            Задание 7: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/cards.html"
-                                          target="_blank">Cards</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/cards.html"
+                               target="_blank">Cards</a>
                         </li>
                         <li>
-                            Задание 8: <a
-                                href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/cards_scroll.html"
-                                target="_blank">Cards_scroll</a>
+                            <a
+                                    href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/cards_scroll.html"
+                                    target="_blank">Cards_scroll</a>
                         </li>
                         <li>
-                            Задание 9: <a
-                                href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/test_border.html"
-                                target="_blank">Test_border</a>
+                            <a
+                                    href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/test_border.html"
+                                    target="_blank">Test_border</a>
                         </li>
                         <li>
-                            Задание 10: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/border_V1.html"
-                                           target="_blank">Border_V1</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/border_V1.html"
+                               target="_blank">Border_V1</a>
                         </li>
                         <li>
-                            Задание 11: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/border_V2.html"
-                                           target="_blank">Border_V2</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/border_V2.html"
+                               target="_blank">Border_V2</a>
                         </li>
                         <li>
-                            Задание 12: <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/Windows.html"
-                                           target="_blank">Windows</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme4/26_12_2016/Windows.html"
+                               target="_blank">Windows</a>
                         </li>
                     </ul>
                 </li>
                 <hr>
                 <li>
-                    Тема 5. Обтекание. Вёрстка макетов. Селекторы
+                    Обтекание. Вёрстка макетов. Селекторы
                     <ul style="list-style-type: circle; font: italic bold 20px/200% Arial;">
                         <li>
-                            Задание 1: <a href="http://fe.it-academy.by/Sites/0020528/Theme5/CHESS.html"
-                                          target="_blank">CHESS</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme5/CHESS.html"
+                               target="_blank">CHESS</a>
                         </li>
                         <li>
-                            Задание 2: <a href="http://fe.it-academy.by/Sites/0020528/Theme5/Float.html"
-                                          target="_blank">Float</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme5/Float.html"
+                               target="_blank">Float</a>
                         </li>
                         <li>
-                            Задание 3: <a href="http://fe.it-academy.by/Sites/0020528/Theme5/Float_marking.html"
-                                          target="_blank">Float_marking</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme5/Float_marking.html"
+                               target="_blank">Float_marking</a>
                         </li>
                         <li>
-                            Задание 4: <a href="http://fe.it-academy.by/Sites/0020528/Theme5/Simon_and_Garfunkel.html"
-                                          target="_blank">Simon_and_Garfunkel</a>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme5/Simon_and_Garfunkel.html"
+                               target="_blank">Simon_and_Garfunkel</a>
                         </li>
+                        <li>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme5/links.html"
+                               target="_blank">links</a>
+                        </li>
+                        <li>
+                            <a href="http://fe.it-academy.by/Sites/0020528/Theme5/links_V2.html"
+                               target="_blank">links_V2</a>
+                        </li>
+
                     </ul>
                 </li>
                 <hr>
