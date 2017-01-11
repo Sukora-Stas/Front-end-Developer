@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание</title>
+    <style>
+
+        textarea {
+            border: none;
+        }
+
+        @media all and (min-width: 760px) {
+            fieldset {
+                width: 720px;
+                float: left;
+                border: double red 3px;
+            }
+
+            .pub {
+                margin-bottom: 15px;
+            }
+
+            label {
+                float: left;
+            }
+
+        }
+
+        @media all and (max-width: 1280px) {
+            fieldset {
+                width: 300px;
+                float: left;
+                border: double red 3px;
+            }
+
+            .pub {
+                margin-bottom: 15px;
+            }
+
+            input[type=radio] {
+                text-align: left;
+                clear: both;
+            }
+        }
+    </style>
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php" method="get">
+    <fieldset>
+        <legend>Домашнее задание №8а</legend>
+        <div class="pub">Для публикации вашей статьи, заполните пожалуйста следующую форму:</div>
+        <span>Название статьи:</span>
+        <br>
+        <label for="someSelect">Рубрика:</label>
+        <select id="someSelect" name="option">
+            <option value="1">программирование</option>
+            <option value="2">обучение</option>
+            <option value="3">информационные технологии</option>
+            <option value="4">в мире животных</option>
+            <option value="5">и ещё какая нибудь гадость</option>
+        </select>
+        <br>
+        <label>Публикации:
+            <input type="radio" name="radio" value="1">на сайте
+            <input type="radio" name="radio" value="1">в журнале
+            <input type="radio" name="radio" value="1">на сайте и в журнале
+        </label>
+        <br>
+        <label for="check">Разрешить комментарии:</label>
+        <input type="checkbox" checked name="check" id="check">
+
+        <br>
+
+        <label for="text">Текст статьи:</label>
+        <textarea id="text"></textarea>
+    </fieldset>
+</form>
+</body>
+</html>
