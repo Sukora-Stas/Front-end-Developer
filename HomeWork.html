@@ -10,6 +10,27 @@
             counter-reset: theme;
         }
 
+        ul li {
+            display: none;
+        }
+
+        li:hover ul li {
+            transition: .5s all ease;
+            display: block;
+            color: black;
+            border: solid 0 white;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            background-color: lightgreen;
+        }
+
+        /* добавить при наведение изменения*/
+        ol li ul > li:hover {
+            color: white;
+            background-color: lightcoral;
+        }
+
         ul {
             counter-reset: theme;
         }
@@ -53,7 +74,7 @@
                                 Визбор</a>
                         </li>
                         <li>
-                            Дополнительное<a
+                            Дополнительное <a
                                 href="http://fe.it-academy.by/Sites/0020507/HW1/additional_task.html" target="_blank">tegs</a>
                         </li>
                     </ul>
