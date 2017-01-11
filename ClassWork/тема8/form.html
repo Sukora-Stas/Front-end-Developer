@@ -34,7 +34,9 @@
             width: 98%;
             box-shadow: 5px 5px 20px 0 lightblue;
         }
-
+        .fieldGroup .inputSubmit{
+            float: right;
+        }
         @media all and(max-width: 400px) {
             .textLabel {
                 float: none;
@@ -44,6 +46,11 @@
             .fieldGroup .inputGroup {
                 margin-left: 0;
             }
+            .fieldGroup .inputSubmit{
+                float: none;
+                width: 100%;
+            }
+
         }
     </style>
 </head>
@@ -78,12 +85,15 @@
         </div>
     </div>
 
-
-    <label>
+    <div class="fieldGroup">
+    <label class="textLabel">
         Согласен с правилами сайта: <input type="checkbox" checked name="check">
     </label><br>
+    </div>
 
-    <input type="submit" name="RegistBtn" value="Регистрация">
+    <div class="fieldGroup">
+    <input class="inputSubmit" type="submit" name="RegistBtn" value="Регистрация">
+    </div>
 </div>
 </form>
 </body>
