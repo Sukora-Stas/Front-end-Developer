@@ -12,16 +12,22 @@
 
         ul li {
             display: none;
-            margin: 0;
         }
 
         li:hover ul {
             overflow: hidden;
             margin: 30px;
             transition: .5s all ease;
+
+        }
+
+        li:hover ul {
+
+            transition: .5s all ease;
         }
 
         li:hover ul li {
+
             transition: .5s all ease;
             display: block;
             color: black;
@@ -32,14 +38,23 @@
             background-color: lightgreen;
         }
 
+        li ul li:hover a {
+            color: lightgreen !important;
+            transition: .5s all ease .10s;
+        }
+
         /* добавить при наведение изменения*/
         ol li ul > li:hover {
+            padding: 15px;
+            margin: 10px;
             color: white;
             background-color: lightcoral;
+            transition: .5s all ease .10s;
         }
 
         ul {
             counter-reset: theme;
+            margin: 0;
         }
 
         ol > li::before {
@@ -69,7 +84,7 @@
 
             <ol style="list-style-type: disc; font: italic bold 25px/200% Arial">
 
-                <li>
+                <li class="test">
                     Введение в HTML. Ссылки
                     <ul style="list-style-type: circle; font: italic bold 20px/200% Arial">
                         <li>
