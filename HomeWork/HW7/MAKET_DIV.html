@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAKET_DIV</title>
+    <style>
+        article {
+            overflow: hidden;
+            margin-left: 175px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: block;
+            font-size: 22px;
+
+        }
+        li {
+            width: auto;
+            padding-right: 20px;
+            display: inline-block;
+            position: relative;
+        }
+        li ul {
+            position: absolute;
+            display: none;
+        }
+        div>p { margin: 0}
+        a:hover {
+            color: red;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: deepskyblue;
+            color: black;
+        }
+
+
+        .left-poss {
+            width: auto;
+            height: 7em;
+            padding-top: 10px;
+            text-align: center;
+            background-color: yellowgreen;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .ball {
+            background: url('Ball.png') top right repeat-y;
+        }
+
+        .article {
+            overflow: hidden;
+            margin-left: 175px;
+        }
+
+        .img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            clear: both;
+            padding: 20px;
+            background-color: deepskyblue;
+            color: black;
+        }
+        @media all and (max-width:1000px) {
+            ul {
+                font-size: 14px;
+            }
+            li {
+                width: 153px;
+                padding-right: 0;
+                padding-bottom: 10px;
+                display: block;
+                position: static;
+            }
+            li ul {
+                position: static;
+            }
+            .left-item {
+                background: url('1.png') left top repeat-y;
+            }
+            div>p {margin: 1em}
+            div.left-poss {
+                width: 153px;
+                height: 0;
+                float: left;
+                text-align: left !important;
+                padding-left: 20px;
+                padding-top: 0;
+                background-color: white!important;
+            }
+            .center {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+        @media all and (min-width:1400px) {
+            .center li{
+                display: none;
+            }
+            .article p{
+                margin: 0;
+                max-width: 100%;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="header">ПРИВЕТ УЧАСТНИКОМ
+    СОРЕВНОВАНИЯ!
+</div>
+<div class="left-item">
+    <div class="left-poss">
+        <p class="center"><b>Виды спорта:</b></p>
+        <ul>
+            <li><a href="#" target="_blank">конькобежный спорт</a></li>
+            <li><a href="#" target="_blank">битлон</a></li>
+            <li><a href="#" target="_blank">футбол</a></li>
+            <li><a href="#" target="_blank">стрельба из лука</a></li>
+            <li><a href="#" target="_blank">прыжки в длину</a></li>
+            <li><a href="#" target="_blank">прыжки в высоту</a></li>
+            <li><a href="#" target="_blank">фигурное катание</a></li>
+            <li><a href="#" target="_blank">синхронное плавание</a></li>
+            <li><a href="#" target="_blank">шахматы</a></li>
+            <li><a href="#" target="_blank">шашки</a></li>
+        </ul>
+    </div>
+    <div class="ball">
+        <article class="article">
+            <h3 class="center">ФУТБОЛ</h3>
+            <img src="2.png" height="134" width="200" class="img">
+            <p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими
+                частями тела (кроме рук) большее количество раз, чем команда соперника.
+            </p>
+            <p>
+                Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов. Эти
+                правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения для таких
+                групп, как юниоры, взослые, женщины и люди с ограниченными физическими возможностями. Законы очень часто
+                формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера
+                игры.
+            </p>
+        </article>
+        <div class="footer">ГЛАВНОЕ
+            НЕ ПОБЕА, А УЧАСТИЕ!
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
