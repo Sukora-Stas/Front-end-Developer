@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        .center{
+            margin-top: 20px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid 1px lightcoral;
+            border-radius: 5%;
+            padding: 20px;
+            box-shadow: 5px 5px 20px 0 lightgreen;
+            /*background:linear-gradient(to top,deepskyblue 30%, lightcoral 70%);*/
+        }
+        .fieldGroup {
+            overflow: hidden;
+            padding: 2px;
+        }
+
+        .fieldGroup .textLabel {
+            display: block;
+            width: 10em;
+            float: left;
+        }
+
+        .fieldGroup .inputGroup {
+            margin-left: 10em;
+        }
+
+        .inputGroup input {
+            width: 98%;
+            box-shadow: 5px 5px 20px 0 lightblue;
+        }
+
+        @media all and(max-width: 400px) {
+            .textLabel {
+                float: none;
+                width: 100%;
+            }
+
+            .fieldGroup .inputGroup {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php" method="post">
+<div class="center">
+    <div class="fieldGroup">
+        <label class="textLabel" for="lastName">Фамилия: </label>
+        <div class="inputGroup">
+            <input type="text" name="LastName" placeholder="Введите Фамилию" id="lastName" required><br>
+        </div>
+    </div>
+
+    <div class="fieldGroup">
+        <label class="textLabel" for="firstName">Имя: </label>
+        <div class="inputGroup">
+            <input type="text" name="FirstName" placeholder="Введите Имя" id="firstName" required><br>
+        </div>
+    </div>
+
+    <div class="fieldGroup">
+        <label class="textLabel" for="midleName">Отчество: </label>
+        <div class="inputGroup">
+            <input type="text" name="MidleName" placeholder="Введите Отчество" id="midleName"><br>
+        </div>
+    </div>
+
+    <div class="fieldGroup">
+        <label class="textLabel" for="email">E-mail для связи: </label>
+        <div class="inputGroup">
+            <input type="email" name="e-mail" placeholder="Введите e-mail" id="email" required><br>
+        </div>
+    </div>
+
+
+    <label>
+        Согласен с правилами сайта: <input type="checkbox" checked name="check">
+    </label><br>
+
+    <input type="submit" name="RegistBtn" value="Регистрация">
+</div>
+</form>
+</body>
+</html>
