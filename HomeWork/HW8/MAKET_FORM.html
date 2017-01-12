@@ -4,20 +4,69 @@
     <meta charset="UTF-8">
     <title>Домашнее задание</title>
     <style>
-
         textarea {
-            border: none;
+            border: lightgray solid 1px;
         }
 
         @media all and (min-width: 760px) {
+            form {
+                width: 600px;
+                height: 300px;
+            }
+
             fieldset {
-                width: 720px;
-                float: left;
                 border: double red 3px;
             }
 
             .pub {
                 margin-bottom: 15px;
+            }
+
+            .pub2 input {
+                float: right;
+                clear: both;
+                width: 350px;
+                border: lightgray solid 1px;
+            }
+
+            #someSelect {
+                margin-top: 5px;
+                float: right;
+                width: 353px;
+            }
+
+            ul {
+                padding-left: 0;
+                float: left;
+                margin: 0;
+
+            }
+
+            li {
+                list-style-type: none;
+                display: inline-block;
+
+            }
+
+            li input {
+                clear: both;
+                float: left;
+                display: inline-block;
+
+            }
+
+            input[type=submit] {
+                float: left;
+                clear: both;
+            }
+
+            .text {
+                clear: both;
+                height: 70px;
+            }
+
+            .text textarea {
+                width: 310px;
             }
 
             label {
@@ -27,9 +76,12 @@
         }
 
         @media all and (max-width: 1280px) {
+            form {
+                width: 350px;
+                height: 300px;
+            }
+
             fieldset {
-                width: 300px;
-                float: left;
                 border: double red 3px;
             }
 
@@ -37,10 +89,54 @@
                 margin-bottom: 15px;
             }
 
+            .pub2 input {
+                float: left;
+                clear: both;
+                width: 315px;
+                border: lightgray solid 1px;
+            }
+
+            #someSelect {
+                float: left;
+
+                width: 320px;
+            }
+
             input[type=radio] {
-                text-align: left;
+                float: left;
+                text-align: left !important;
+            }
+
+            ul {
+                padding-left: 0;
+                float: left;
+                margin: 0;
+            }
+
+            li {
+                list-style-type: none;
+                clear: both;
+                padding-left: 0;
+            }
+
+            li input {
                 clear: both;
             }
+
+            input[type=submit] {
+                float: left;
+                clear: both;
+            }
+
+            .text {
+                clear: both;
+                height: 70px;
+            }
+
+            .text textarea {
+                width: 310px;
+            }
+
         }
     </style>
 </head>
@@ -49,8 +145,11 @@
     <fieldset>
         <legend>Домашнее задание №8а</legend>
         <div class="pub">Для публикации вашей статьи, заполните пожалуйста следующую форму:</div>
-        <span>Название статьи:</span>
-        <br>
+        <div class="pub2">
+            Название статьи:
+            <input type="text" name="pub">
+        </div>
+
         <label for="someSelect">Рубрика:</label>
         <select id="someSelect" name="option">
             <option value="1">программирование</option>
@@ -59,20 +158,34 @@
             <option value="4">в мире животных</option>
             <option value="5">и ещё какая нибудь гадость</option>
         </select>
-        <br>
-        <label>Публикации:
-            <input type="radio" name="radio" value="1">на сайте
-            <input type="radio" name="radio" value="1">в журнале
-            <input type="radio" name="radio" value="1">на сайте и в журнале
+
+        <ul>
+            <label>Публикации:</label>
+
+            <li>
+                <input class="radio" id="cite" type="radio" name="radio" value="1">
+                <label class="radio" for="cite">на сайте</label>
+            </li>
+            <li>
+                <input class="radio" id="magaz" type="radio" name="radio" value="2">
+                <label class="radio" for="magaz">в журнале</label>
+            </li>
+            <li>
+                <input class="radio" id="cite+magaz" type="radio" name="radio" value="3">
+                <label class="radio" for="cite+magaz">на сайте и в журнале</label>
+            </li>
+
+        </ul>
+
+        <label for="check">Разрешить комментарии:
+            <input type="checkbox" checked name="check" id="check">
         </label>
-        <br>
-        <label for="check">Разрешить комментарии:</label>
-        <input type="checkbox" checked name="check" id="check">
+        <div class="text">
+            <label for="text">Текст статьи:</label>
+            <textarea id="text"></textarea>
 
-        <br>
-
-        <label for="text">Текст статьи:</label>
-        <textarea id="text"></textarea>
+        </div>
+        <input type="submit" name="btn" value="Опубликовать">
     </fieldset>
 </form>
 </body>
