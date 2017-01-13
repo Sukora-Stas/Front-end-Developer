@@ -56,6 +56,21 @@
             }
 
         }
+
+        .Group .text {
+            display: none;
+            font-size: 10px;
+        }
+
+        .Group label:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        input#check:checked + div{
+            display: block;
+            font-size: 10px;
+        }
     </style>
 </head>
 <body>
@@ -90,9 +105,28 @@
         </div>
 
         <div class="Group">
-            <label class="textLabel">
-                Согласен с правилами сайта: <input type="checkbox" checked name="check">
-            </label><br>
+            <label class="textLabel" for="email">Годы войны:</label>
+            <div class="inputGroup">
+                <input type="text" name="year" pattern="19(39|4[0-5])">
+            </div>
+        </div>
+
+        <div class="Group">
+            <label class="textLabel" for="check">Согласен с правилами сайта: </label>
+                <input type="checkbox" checked name="check" id="check">
+
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam assumenda
+                consequatur
+                corporis, earum eveniet impedit neque perspiciatis quam quisquam quod reprehenderit, repudiandae soluta
+                tempore temporibus? A nesciunt quis voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Accusantium aliquam assumenda consequatur corporis, earum eveniet impedit neque perspiciatis quam
+                quisquam quod reprehenderit, repudiandae soluta tempore temporibus? A nesciunt quis voluptatibus?Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam assumenda consequatur corporis,
+                earum eveniet impedit neque perspiciatis quam quisquam quod reprehenderit, repudiandae soluta tempore
+                temporibus? A nesciunt quis voluptatibus?
+            </div>
+
+
         </div>
 
         <div class="Group">
