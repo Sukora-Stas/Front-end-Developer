@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <title>Домашнее задание №8b</title>
     <style>
+        body {
+            width: 60%;
+            position: fixed;
+        }
+
         img {
             position: absolute;
-            left: 700px;
-            top: 150px;
+            left: 40%;
+            top: 10%;
         }
 
         img:nth-of-type(1) {
-            left: 630px;
-            top: 100px;
+            left: 32%;
 
         }
 
         img:nth-of-type(2) {
-            left: 840px;
-            top: 90px;
+            left: 55%;
+
         }
 
         img:nth-of-type(3) {
-            left: 730px;
-            top: 290px;
+            left: 43%;
+            top: 55%;
 
         }
 
         img:hover {
-            z-index: 1;
+            z-index: 2;
+        }
+
+        .posit {
+            position: fixed;
+            width: 60%;
+            height: 300px;
+
         }
     </style>
 </head>
@@ -37,9 +48,11 @@
     моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня. Сначала я молчать хотела; Поверьте: моего стыда
     Вы не узнали б никогда, Когда б надежду я имела Хоть редко, хоть в неделю раз В деревне нашей видеть вас, Чтоб
     только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об одном И день и ночь до новой встречи.</p>
-<img src="pic/biohazard.png">
-<img src="pic/Man-and-woman.png">
-<img src="pic/Yin_and_Yang.png">
-<img src="pic/No_smoking.png">
+<div class="posit">
+    <img src="pic/biohazard.png">
+    <img src="pic/Man-and-woman.png">
+    <img src="pic/Yin_and_Yang.png">
+    <img src="pic/No_smoking.png">
+</div>
 </body>
 </html>
