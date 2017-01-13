@@ -9,76 +9,76 @@
             width: 70%;
         }
 
-        .fieldGroup {
+        .Group {
             padding: 2px;
             overflow: hidden;
         }
 
-        .fieldGroup textarea {
+        .Group textarea {
             width: 95%;
         }
 
-        .fieldGroup .textLabel {
+        .Group .textLabel {
             width: 12em;
             display: block;
             float: left;
         }
 
-        .fieldGroup .inputField {
+        .Group .input {
             margin-left: 11em;
         }
 
-        .fieldGroup .inputField select {
+        .Group .input select {
             width: 40%;
         }
 
-        .fieldGroup .textLabel[for="textArticle"] {
+        .Group .textLabel[for="textArticle"] {
             float: none;
         }
 
-        .fieldGroup .inputField input[type="text"] {
+        .Group .input input[type="text"] {
             width: 95%;
         }
 
         @media all and (max-width: 800px) {
-            .fieldGroup .textLabel {
+            .Group .textLabel {
                 width: auto;
                 float: none;
             }
 
-            .fieldGroup .inputField {
+            .Group .input {
                 margin-left: 0;
             }
 
-            .fieldGroup .inputField select {
+            .Group .input select {
                 width: 95.5%;
             }
 
-            .fieldGroup .inputField label.radioLabel {
+            .Group .input label.radioLabel {
                 display: block;
             }
 
-            .fieldGroup .textLabel[for="comment"] {
+            .Group .textLabel[for="comment"] {
                 float: left;
             }
         }
     </style>
 </head>
 <body>
-<form action="http://fe.it-academy.by/TestForm.php" method="get">
+<form action="http://fe.it-academy.by/TestForm.php" method="post">
     <fieldset>
         <legend>Домашнее задание №8а</legend>
-
-        <div class="fieldGroup">
+        <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+        <div class="Group">
             <label class="textLabel" for="nameArticle">Название статьи:</label>
-            <div class="inputField">
+            <div class="input">
                 <input type="text" name="nameArticle" id="nameArticle">
             </div>
         </div>
 
-        <div class="fieldGroup">
+        <div class="Group">
             <label class="textLabel" for="rubic">Рубрика:</label>
-            <div class="inputField">
+            <div class="input">
                 <select name="rubic" id="rubic">
                     <option value="1">программирование</option>
                     <option value="2">Дизайн</option>
@@ -87,23 +87,23 @@
             </div>
         </div>
 
-        <div class="fieldGroup">
+        <div class="Group">
             <label class="textLabel">Публикация:</label>
-            <div class="inputField">
+            <div class="input">
                 <label class="radioLabel"><input type="radio" name="public" value="1">на сайте</label>
                 <label class="radioLabel"><input type="radio" name="public" value="2">в журнале</label>
                 <label class="radioLabel"><input type="radio" name="public" value="3">на сайте и в журнале</label>
             </div>
         </div>
 
-        <div class="fieldGroup">
+        <div class="Group">
             <label class="textLabel" for="comment">Разрешитьпубликации:</label>
-            <div class="inputField">
+            <div class="input">
                 <input type="checkbox" name="comment" id="comment" checked>
             </div>
         </div>
 
-        <div class="fieldGroup">
+        <div class="Group">
             <label class="textLabel" for="textArticle">Текст статьи:</label>
             <textarea name="textArticle" id="textArticle"></textarea>
         </div>
