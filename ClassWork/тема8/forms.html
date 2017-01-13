@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<HTML> 
+    <HEAD> 
+        <META charset="utf-8"> 
+        <TITLE>Пример страницы</TITLE> 
+<style>
+/*input + span {visibility: hidden;}
+input:optional + span {border:1px solid red;}
+input:focus + span {visibility: visible;}*/
+.fieldGroup {
+	border: 1px solid grey;
+	background-color: yellow;
+	overflow: hidden;
+	padding: 2px;
+}
+.fieldGroup .textLabel {
+	display: block;
+	width: 10em;
+	float: left;
+	border: 1px solid;
+	background-color: red;
+}
+.fieldGroup .inputField {margin-left: 10em;}
+.inputField input {	width: 98%;}
+.fieldGroup input[type="submit"] {float: right;}
+
+@media all and (max-width: 400px )
+{
+	.textLabel 
+	{
+		float: none;
+		width: 100%;
+	}
+	.fieldGroup .inputField {margin-left: 0;}
+	.fieldGroup .inputSubmit {float: none; width: 100%}
+	.radioField label {display: block;}
+}
+</style>
+    </HEAD> 
+    <BODY> 
+<form action="http://fe.it-academy.by/TestForm.php" method="post" name="form">
+
+<div class="fieldGroup">
+    <label for="login" class="textLabel">Login<span>*</span>:<br><br> <br></label>
+    <div class="inputField">
+   	 	<input type="text" name="someText" placeholder="SomeTemplate" id="login">
+    </div>
+</div>
+<div class="fieldGroup">
+    <label for="pass"  class="textLabel">Password<span>*</span>: </label>
+    <div class="inputField">
+    	<input type="password" name="someTextPass" placeholder="Pass" id="pass">
+    </div>
+</div>
+<div class="fieldGroup">
+    <label for="email"  class="textLabel">Email<span>*</span>: </label>
+    <div class="inputField">
+    	<input type="email" name="e-mail" placeholder="email" id="email">
+    </div>
+</div>
+<div class="fieldGroup ">
+    <input type="submit" class="inputSubmit" value="SomeValue!!">
+</div>
+    <label>
+    	<input type="checkbox" checked name="someCheck">TextCheck
+    </label><br>
+    <em>* - required field!</em><br>
+    <div class="radioField">
+ <label>
+    	<input type="radio" name="radioName" value="1">1
+  </label>
+  <label>
+    	<input type="radio" name="radioName" value="2">2
+  </label>
+  <label>
+    	<input type="radio" name="radioName" value="3">3
+  </label>
+</div>
+
+  <br>
+  <select name="list[]" multiple size="4">
+  	<option value="1" selected>112313</option>
+  	<option value="2">212313</option>
+  	<option value="3" disabled>31312</option>
+  	<option value="4">412313</option>
+  </select>
+<input type="checkbox" checked name="some[]">
+<input type="checkbox" checked name="some[]">
+<input type="checkbox" checked name="some[]">
+<input type="checkbox" checked name="some[]">
+<textarea name="textLarge" placeholder="12313131232131"></textarea>
+
+<hr>
+<input type="text" name="list_1" list="someList">
+<datalist id="someList">
+	<option value="25">Life</option>
+	<option value="29">MTS</option>	
+	<option value="33">Velcom</option>	
+	<option value="44">Velcom</option>		
+</datalist>
+<hr>
+<input type="number" name="someNumber" min="-2" max="2" step=".1">
+<input type="range" name="someRage" min="10" max="100"  value="100">
+<input type="file" style="direction: rtl;">
+<input type="submit">
+<input type="reset">
+<input type="image" src="">
+<input type="button">
+<hr>
+</form>
+
+
+
+    </BODY> 
+</HTML> 
