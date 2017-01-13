@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            /*border-bottom: solid 1px black;*/
+            border-radius: 10px;
+            display: block;
+        }
+
+        li {
+            width: 200px;
+            position: relative;
+            display: inline-block;
+        }
+
+        li ul {
+            position: absolute;
+            /*top: 0px;
+            left: 150px;*/
+            display: none;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        ul > li > ul > li:hover ul {
+            display: block;
+        }
+
+        li a {
+            display: block;
+            border: solid 1px black;
+            border-bottom: none;
+            border-radius: 10px;
+            padding: 5px;
+            color: white;
+            background-color: grey;
+            transition: .5s all ease;
+        }
+
+        li a:hover {
+            color: grey;
+            background-color: white;
+        }
+
+        li a:active {
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+            transition: .2s box-shadow ease;
+        }
+
+        @media all and (max-width: 640px) {
+            ul {
+                width: 200px;
+            }
+
+            li {
+                margin: 2px;
+                display: block;
+            }
+
+            li ul {
+                top: 0;
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">main 1</a>
+        <ul>
+            <li><a href="#">sub 1</a></li>
+            <ul>
+                <li><a href="#">fqwefqwe</a></li>
+            </ul>
+            <li><a href="#">sub 2</a></li>
+            <li><a href="#">sub 3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">main 2</a>
+        <ul>
+            <li><a href="#">sub 1</a></li>
+            <li><a href="#">sub 2</a></li>
+            <li><a href="#">sub 3</a></li>
+        </ul>
+    </li>
+    <li><a href="#">main 3</a>
+        <ul>
+            <li><a href="#">sub 1</a></li>
+            <li><a href="#">sub 2</a></li>
+            <li><a href="#">sub 3</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
