@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nav</title>
+    <style>
+        /* радиокнопки скрыты */
+        input.SRadioFolder {
+            display: none;
+        }
+
+        /* но их метки видны и выстраиваются в линейку */
+        input.SRadioFolder + label {
+            width: 20px;
+            background-color: #aaaaaa;
+            display: block;
+            margin-top: 5px;
+            padding: 0 10px 0 10px;
+            border-radius: 10px 0 0 10px;
+            line-height: 2em;
+        }
+
+        /* самая первая метка - с отступом верх */
+        input.SRadioFolder:first-child + label {
+            margin-top: 20px;
+        }
+
+        /* метка выбранной радиокнопки - голубой фон */
+        input.SRadioFolder:checked + label {
+            background-color: lightcoral;
+        }
+
+        /* все контенты обычно не видны */
+        input.SRadioFolder + label + div {
+            display: none;
+        }
+
+        /* контент выбранной радиокнопки виден */
+        input.SRadioFolder:checked + label + div {
+            display: block;
+            position: absolute;
+            left: 25px;
+            top: -1em;
+            width: 15em;
+            background-color: lightgreen;
+            border-radius: 10px;
+            padding: 10px;
+            height: 300px;
+        }
+
+        ul {
+            list-style-type: circle;
+            font: italic bold 15px/200% Arial;
+        }
+    </style>
+</head>
+<body>
+<div style="position: relative">
+    <input type=radio name=FOLDER id=FOLDER1 checked class='SRadioFolder'>
+    <label for=FOLDER1>1</label>
+    <div class='SFolderDiv'>
+        Введение в HTML. Ссылки <span>✔</span>
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW1/1a.html" target="_blank">Дневник
+                    партизана</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW1/1b.html" target="_blank">Юрий
+                    Визбор</a>
+            </li>
+            <li>
+                Дополнительное <a
+                    href="http://fe.it-academy.by/Sites/0020507/HW1/additional_task.html" target="_blank">tegs</a>
+            </li>
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER2 checked class='SRadioFolder'>
+    <label for=FOLDER2>2</label>
+    <div class='SFolderDiv'>
+        Изображения. Введение в CSS <span>✔</span>
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW2/CHILDBOOK.html"
+                   target="_blank">CHILDBOOK</a>
+            </li>
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER3 checked class='SRadioFolder'>
+    <label for=FOLDER3>3</label>
+    <div class='SFolderDiv'>
+        Цвет. Шрифт. Границы. Размеры<span> ✔</span>
+        <a style="font-size:15px; height: 20px">начало занятий (16.12.2016)</a>
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW3/FONT_GWF.html"
+                   target="_blank">FONT_GWF</a>
+            </li>
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER4 checked class='SRadioFolder'>
+    <label for=FOLDER4>4</label>
+    <div class='SFolderDiv'>
+        Отступы. Фон. Таблицы<span> ✔</span>
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW4/DIV_FRAME_V1.html"
+                   target="_blank">DIV_FRAME_V1</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW4/DIV_FRAME_V2.html"
+                   target="_blank">DIV_FRAME_V2</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW4/DIV_FRAME_V3.html"
+                   target="_blank">DIV_FRAME_V3</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW4/Calendar.html"
+                   target="_blank">Calendar</a>
+            </li>
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER5 checked class='SRadioFolder'>
+    <label for=FOLDER5>5</label>
+    <div class='SFolderDiv'>
+        Обтекание. Вёрстка макетов. Селекторы<span> ✔</span>
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW5/MAKET_DIV.html"
+                   target="_blank">MAKET_DIV</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW5/MAKET_TABLE.html"
+                   target="_blank">MAKET_TABLE</a>
+            </li>
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER6 checked class='SRadioFolder'>
+    <label for=FOLDER6>6</label>
+    <div class='SFolderDiv'>
+        Иерархические селекторы. Каскадирование. Отображение и видимость<span> ✔</span>
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW6/links.html"
+                   target="_blank">links</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW6/CSS_CHESS.html"
+                   target="_blank">CSS_CHESS</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW6/CHESS_1.html"
+                   target="_blank">CHESS_1</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW6/CHESS_2.html"
+                   target="_blank">CHESS_2</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER7 checked class='SRadioFolder'>
+    <label for=FOLDER7>7</label>
+    <div class='SFolderDiv'>
+        Медиазапросы. Адаптивная вёрстка
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW7/MAKET_DIV.html"
+                   target="_blank">MAKET_DIV</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <input type=radio name=FOLDER id=FOLDER8 checked class='SRadioFolder'>
+    <label for=FOLDER8>8</label>
+    <div class='SFolderDiv'>
+        Формы. Позиционирование. HTML5
+        <ul>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW8/MAKET_FORM.html"
+                   target="_blank">MAKET_FORM</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW8/MAKET_ABS_V1.html"
+                   target="_blank">MAKET_ABS_V1</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW8/MAKET_ABS_V2.html"
+                   target="_blank">MAKET_ABS_V2</a>
+            </li>
+            <li>
+                <a href="http://fe.it-academy.by/Sites/0020507/HW8/MAKET_DIV.html"
+                   target="_blank">MAKET_DIV</a>
+            </li>
+            <li>
+                дополнительное <a href="http://fe.it-academy.by/Sites/0020507/HW8/position.html"
+                                  target="_blank">position</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
