@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание №8a</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <style>
+        .js .js-class {
+            display: none;
+        }
+
+        .no-js .js-class {
+            position: fixed;
+            background-color: red;
+            color: white;
+            top: 1%;
+            right: 1%;
+            bottom: 1%;
+            left: 1%;
+            font-size: 10em;
+            display: block;
+        }
+
+        .Group {
+            display: flex;
+        }
+
+        .textLabel {
+            flex: 1 10em;
+        }
+
+        .input {
+            flex: 1 1 20em;
+        }
+
+        input[type=text] {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="js-class">You don't have JavaScript in your browser!!!!!!!!!!!!!</div>
+<form action="http://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+        <legend>Домашнее задание №8а</legend>
+        <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+
+        <div class="Group">
+            <label class="textLabel" for="nameArticle">Название статьи:</label>
+            <div class="input">
+                <input type="text" name="nameArticle" id="nameArticle" placeholder="как называется ваша статья?">
+            </div>
+        </div>
+
+        <div class="Group">
+            <label class="textLabel" for="rubic">Рубрика:</label>
+            <div class="input">
+                <select name="rubic" id="rubic">
+                    <option value="1">программирование</option>
+                    <option value="2">Дизайн</option>
+                    <option value="3">Экономика</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="Group">
+            <label class="textLabel">Публикация:</label>
+            <div class="input">
+                <label class="radioLabel"><input type="radio" name="public" value="1">на сайте</label>
+                <label class="radioLabel"><input type="radio" name="public" value="2">в журнале</label>
+                <label class="radioLabel"><input type="radio" name="public" value="3">на сайте и в журнале</label>
+            </div>
+        </div>
+
+        <div class="Group">
+            <label class="textLabel" for="comment">Разрешить публикации:</label>
+            <div class="input">
+                <input type="checkbox" name="comment" id="comment" checked>
+            </div>
+        </div>
+
+        <div class="Group">
+            <label class="textLabel" for="textArticle">Текст статьи:</label>
+            <textarea name="textArticle" id="textArticle" placeholder="заполните статью"></textarea>
+        </div>
+
+        <input type="submit" value="Опубликовать">
+    </fieldset>
+</form>
+</body>
+</html>

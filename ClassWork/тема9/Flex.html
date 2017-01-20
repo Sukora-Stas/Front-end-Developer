@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-element-1 {
+            flex: 0 1 30%;
+            background-color: lightcoral;
+        }
+
+        .flex-element-2 {
+            flex: 0 1 30%;
+            background-color: lightgreen;
+        }
+
+        .flex-element-3 {
+            flex: 0 1 30%;
+            background-color: lightblue;
+        }
+
+        @media all and (max-width: 800px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            div[class*="flex-element"] {
+                flex: 2 1 10em;
+                margin-bottom: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flex-element-1">
+        flex-element-1flex-element-1flex-elemenex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-e1flex-element-1flex-elemenex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1flex-element-1
+    </div>
+
+    <div class="flex-element-2">
+        flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flexent-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2flex-element-2
+    </div>
+
+    <div class="flex-element-3">
+        flex-elementflex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3f-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3flex-element-3
+    </div>
+</div>
+
+</body>
+</html>
