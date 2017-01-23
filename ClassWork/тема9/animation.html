@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        .smiles {
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+        }
+
+        .smiles img {
+            position: relative;
+            transition: transform .5s ease-in-out;
+        }
+
+        .smiles:nth-child(1) img {
+            top: 0;
+            left: 0;
+        }
+
+        .smiles:nth-child(2) img {
+            top: -25px;
+            left: -25px;
+        }
+
+        .smiles:nth-child(3) img {
+            top: -50px;
+            left: -50px;
+        }
+
+        .smiles:nth-child(4) img {
+            top: -50px;
+            left: -75px;
+        }
+
+        .smiles:nth-child(5) img {
+            top: -50px;
+            left: -100px;
+        }
+
+        .smiles img:hover {
+            transform: translateY(-25px);
+        }
+
+        .float {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+<div class="float">
+    <div class="smiles">
+        <img src="http://fe.it-academy.by/Materials/HTMLCSS_V9/images/smileys.png" alt="smile">
+    </div>
+    <div class="smiles">
+        <img src="http://fe.it-academy.by/Materials/HTMLCSS_V9/images/smileys.png" alt="smile">
+    </div>
+    <div class="smiles">
+        <img src="http://fe.it-academy.by/Materials/HTMLCSS_V9/images/smileys.png" alt="smile">
+    </div>
+    <div class="smiles">
+        <img src="http://fe.it-academy.by/Materials/HTMLCSS_V9/images/smileys.png" alt="smile">
+    </div>
+    <div class="smiles">
+        <img src="http://fe.it-academy.by/Materials/HTMLCSS_V9/images/smileys.png" alt="smile">
+    </div>
+</div>
+<hr>
+<img src="http://fe.it-academy.by/Materials/HTMLCSS_V9/images/smileys.png" alt="smile">
+
+</body>
+</html>
