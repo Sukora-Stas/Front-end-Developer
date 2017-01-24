@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+    <style>
+        .col-1 {
+            fill: #F35C78;
+        }
+
+        .col-2 {
+            fill: #E77D6D;
+        }
+
+        .col-3 {
+            fill: #D99B64;
+        }
+
+        .col-4 {
+            fill: #C8B357;
+        }
+
+        .col-5 {
+            fill: #B2CC49;
+        }
+    </style>
+
+</head>
+<body>
+<svg width="240" height="170">
+    <defs>
+        <g>
+            <circle fill="gold" r="30" id="yellowball"/>
+        </g>
+        <!-- Описание символа -->
+        <symbol id="mouth">
+            <polyline points="15 15 5 10 15 5" stroke="crimson" fill="none" stroke-width="3"/>
+        </symbol>
+        <!-- Описание символа -->
+        <symbol id="bird">
+            <g stroke="brown">
+                <polyline points="0 0 0 25" stroke-width="3" transform="translate(25 100)"/>
+                <polyline points="0 0 0 25" stroke-width="3" transform="translate(45 100)"/>
+                <polyline points="0 0 12 0" stroke-width="3" transform="translate(19 125)"/>
+                <polyline points="0 0 12 0" stroke-width="3" transform="translate(40 125)"/>
+            </g>
+            <use xlink:href="#mouth" x="83" y="35"/>
+            <use xlink:href="#yellowball" x="90" y="55" transform="scale(.75)"/>
+            <use xlink:href="#yellowball" x="35" y="75" width="100"/>
+            <polyline points="55 70 45 90 20 80" stroke="orange" stroke-width="3" fill="none"/>
+            <circle fill="black" r="5" cx="75" cy="35"/>
+            <circle fill="gray" r="1" cx="77" cy="35"/>
+        </symbol>
+    </defs>
+
+    <!-- Использование символа -->
+    <use xlink:href="#bird" x="15" y="15"/>
+    <!-- Ещё раз используем символ, повернув его по горизонтали -->
+    <use xlink:href="#bird" x="0" y="35" transform="translate(225 -20) scale(-1,1)"/>
+</svg>
+<svg width="260" height="50">
+
+    <defs>
+        <!-- Домик -->
+        <path id="house" d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"/>
+    </defs>
+
+    <!-- Копии домика -->
+    <use xlink:href="#house"
+         class="col-1" x="20" y="10"
+         transform="rotate(35 36 26)"/>
+    <use xlink:href="#house"
+         class="col-2" x="67" y="10"
+         transform="rotate(100 83 26)"/>
+    <use xlink:href="#house"
+         class="col-3" x="114" y="10"
+         transform="rotate(140 130 26)"/>
+    <use xlink:href="#house"
+         class="col-4" x="161" y="10"
+         transform="rotate(30 177 26)"/>
+    <use xlink:href="#house"
+         class="col-5" x="208" y="10"
+         transform="rotate(100 224 26)"/>
+</svg>
+</body>
+</html>

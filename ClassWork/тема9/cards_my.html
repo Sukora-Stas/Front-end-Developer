@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анимация</title>
+    <style>
+        @keyframes cardAnimation {
+            0% {
+                opacity: 1;
+            }
+            14.285714285714285714285714285714% {
+                opacity: 1;
+            }
+            20% {
+                opacity: 0;
+            }
+            94.285714285714285714285714285714% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .card {
+            position: absolute;
+            background: url(cards2.png) no-repeat;
+            width: 143px;
+            height: 193px;
+            float: left;
+            border-radius: 25px;
+            animation-name: cardAnimation;
+            animation-duration: 35s;
+            animation-iteration-count: infinite;
+        }
+
+        .card1 {
+            background-position: -287px -581px;
+            animation-name: cardAnimation;
+            animation-delay: 1s;
+        }
+
+        .card2 {
+            background-position: -143px -2325px;
+            animation-name: cardAnimation;
+            animation-delay: 1s;
+        }
+
+        .card3 {
+            background-position: 0 -190px;
+            animation-name: cardAnimation;
+            animation-delay: 1s;
+        }
+
+        .card4 {
+            background-position: 0 -385px;
+            animation-name: cardAnimation;
+            animation-delay: 1s;
+        }
+
+        .card5 {
+            background-position: 0 0;
+            animation-name: cardAnimation;
+            animation-delay: 0s;
+        }
+    </style>
+</head>
+<body>
+<div class="card card1"></div>
+
+<div class="card card2"></div>
+
+<div class="card card3"></div>
+
+<div class="card card4"></div>
+
+<div class="card card5"></div>
+</body>
+</html>

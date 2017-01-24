@@ -1,79 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Анимация</title>
-    <style>
-        @keyframes cardAnimation {
-            0% {
-                opacity: 1;
-            }
-            14.285714285714285714285714285714% {
-                opacity: 1;
-            }
-            20% {
-                opacity: 0;
-            }
-            94.285714285714285714285714285714% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+<!DOCTYPE html> 
+<HTML> 
+        <HEAD> 
+            <META charset="utf-8"> 
+            <TITLE>Пример страницы</TITLE> 
+			<style>
+@keyframes cardAnimation {
+	0% {opacity: 1;}
+	20% {opacity: 1;}
+	40% {opacity: 0;}
+	80% {opacity: 0;}
+	100% {opacity: 1;}
+}
+						
+.card {
+	background-image: url('http://fe.it-academy.by/Sites/0020642/cards2.png');
+	background-repeat: no-repeat;
+	width:143px;
+	height:198px;
+	float:left;	
+	animation-duration: 8s;
+}
+.card-01 {
+	background-position: 0 0;
+	position: absolute;
+	margin: 0 0;
+	animation-delay: 4s;
+	
+}
+.card-02 {
+	background-position: -143px -198px;
+	position: absolute;
+	margin: 0 0;
+	animation-delay: 3s;
+}
+.card-03 {
+	background-position: -0px -1747px;
+	position: absolute;
+	margin: 0 0;
+	animation-delay: 2s;
+}
 
-        .card {
-            position: absolute;
-            background: url(cards2.png) no-repeat;
-            width: 143px;
-            height: 193px;
-            float: left;
-            border-radius: 25px;
-            animation-name: cardAnimation;
-            animation-duration: 35s;
-            animation-iteration-count: infinite;
-        }
+.card-04 {
+	background-position:  -290px -580px;
+	position: absolute;
+	margin: 0 0;
+	animation-delay: 1s;
+}
+.card-05 {
+	background-position:  -145px -2326px;
+	position: absolute;
+	margin: 0 0;
+	animation-delay: 0s;
+}
 
-        .card1 {
-            background-position: -287px -581px;
-            animation-name: cardAnimation;
-            animation-delay: 1s;
-        }
+			</style>
+        </HEAD> 
+        <BODY>
+		<div style='position: relative'>
+			<div class="card card-01"></div>
+			<div class="card card-02"></div>
+			<div class="card card-03"></div>
+			<div class="card card-04"></div>
+			<div class="card card-05"></div>
+		</div>	
+			
 
-        .card2 {
-            background-position: -143px -2325px;
-            animation-name: cardAnimation;
-            animation-delay: 1s;
-        }
-
-        .card3 {
-            background-position: 0 -190px;
-            animation-name: cardAnimation;
-            animation-delay: 1s;
-        }
-
-        .card4 {
-            background-position: 0 -385px;
-            animation-name: cardAnimation;
-            animation-delay: 1s;
-        }
-
-        .card5 {
-            background-position: 0 0;
-            animation-name: cardAnimation;
-            animation-delay: 0s;
-        }
-    </style>
-</head>
-<body>
-<div class="card card1"></div>
-
-<div class="card card2"></div>
-
-<div class="card card3"></div>
-
-<div class="card card4"></div>
-
-<div class="card card5"></div>
-</body>
-</html>
+        </BODY> 
+</HTML> 
