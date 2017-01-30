@@ -7,20 +7,43 @@
 <body>
 <p>Здесь может быть некий текст...</p>
 <script>
-    var Rost = prompt('vvedite', 183);
-    var HelloMsg = 'Привет';
-    var Name = 'умник';
+    var SpeedS = prompt('Введите скорость:');
+    var Speed = parseFloat(SpeedS);
 
-    var fut = 30;
-    var inc = 2.5;
+    if (!isNaN(Speed)) {
 
-    console.log('Ваш рост: ' + Rost + 'Cm, Футов: ' + (Rost - Rost % fut) / fut + ' и Дюймов: ' + Rost / inc)
+        if (Speed > 100)
+            console.log('вы с ума сошли!');
 
-    console.log(Rost * 2);
+        else {
+            if (Speed > 80)
+                console.log('превышение!');
+            else {
+                if (Speed > 60)
+                    console.log('норма');
+                else
+                    console.log('кролик тупой!');
+            }
+        }
+    }
+    else {
+        alert("Error mydak, vvedi chislo")
+    }
 
-    console.log(Rost - 172);
-
-    console.log((Rost - 0.5) / 2);
+    //    var Rost = prompt('vvedite', 183);
+    //    var HelloMsg = 'Привет';
+    //    var Name = 'умник';
+    //
+    //    var fut = 30;
+    //    var inc = 2.5;
+    //
+    //    console.log('Ваш рост: ' + Rost + 'Cm, Футов: ' + (Rost - Rost % fut) / fut + ' и Дюймов: ' + Rost / inc)
+    //
+    //    console.log(Rost * 2);
+    //
+    //    console.log(Rost - 172);
+    //
+    //    console.log((Rost - 0.5) / 2);
 </script>
 <p>Здесь может быть ещё текст...</p>
 
