@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AnketaIf</title>
+</head>
+<body>
+<script>
+    var name = prompt("Введите ваше имя", "Стас");
+    var surname = prompt("Введите вашу Фамилию", "Сукора");
+    var middlename = prompt("Введите ваше Отчество", "Игоревич");
+
+    var age = prompt("Введите ваш возвраст", "19");
+
+    if (!isNaN(age)) {
+        var ageDay = age * 365;
+        var fiveYear = parseInt(age) + 5;
+    }
+    else alert("Вы ввели не число");
+
+    var sex = confirm("Ваш пол мужской?");
+
+    var pension = confirm("Вы на пенсии?");
+
+    if (sex == true) {
+        sex = "Мужской";
+    } else {
+        sex = "Женский";
+    }
+
+    if (pension == true) {
+        pension = "Да";
+    } else {
+        pension = "Нет";
+    }
+
+    if (ageDay == undefined) {
+        ageDay = "ты дибил, надо вводить число";
+    }
+
+    alert("ваше ФИО: " + name + " " + surname + " " + middlename + "\n" +
+        "ваш возраст в годах: " + age + "\n" +
+        "ваш возраст в днях: " + ageDay + "\n" +
+        "через 5 лет вам будет: " + fiveYear + "\n" +
+        "ваш пол: " + sex + "\n" +
+        "вы на пенсии: " + pension);
+
+</script>
+</body>
+</html>
