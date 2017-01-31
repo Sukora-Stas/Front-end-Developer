@@ -18,21 +18,9 @@
     }
     else alert("Вы ввели не число");
 
-    var sex = confirm("Ваш пол мужской?");
+    var sex = confirm("Ваш пол мужской?") ? "Мужской" : "Женский";
 
-    var pension = confirm("Вы на пенсии?");
-
-    if (sex == true) {
-        sex = "Мужской";
-    } else {
-        sex = "Женский";
-    }
-
-    if (pension == true) {
-        pension = "Да";
-    } else {
-        pension = "Нет";
-    }
+    var pension = confirm("Вы на пенсии?") ? "Да" : "Нет";
 
     if (ageDay == undefined) {
         ageDay = "ты дибил, надо вводить число";
