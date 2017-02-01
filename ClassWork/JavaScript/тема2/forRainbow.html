@@ -6,38 +6,37 @@
 </head>
 <body>
 <script>
-    var ColorNameS = " ";
+    var ColorName = "";
     for (var ColorNum = 1; ColorNum <= 7; ColorNum++) {
-        var ColorName = " ";
+
 
         switch (ColorNum) {
             case 1:
-                ColorName = 'красный';
+                ColorName += 'красный\n';
                 break;
             case 2:
-                ColorName = 'оранжевый';
+                ColorName += 'оранжевый\n';
                 break;
             case 3:
-                ColorName = 'жёлтый';
+                ColorName += 'жёлтый\n';
                 break;
             case 4:
-                ColorName = 'зелёный';
+                ColorName += 'зелёный\n';
                 break;
             case 5:
-                ColorName = 'голубой';
+                ColorName += 'голубой\n';
                 break;
             case 6:
-                ColorName = 'синий';
+                ColorName += 'синий\n';
                 break;
             case 7:
-                ColorName = 'фиолетовый';
+                ColorName += 'фиолетовый\n';
                 break;
 
         }
 
-        ColorNameS += " " + ColorName + "\n";
     }
-    alert(ColorNameS);
+    alert(ColorName);
 </script>
 </body>
 </html>
