@@ -6,6 +6,14 @@
 </head>
 <body>
 <script>
+    do {
+
+        var ColorNumS = prompt('Введите номер цвета в радуге:');
+        if (!isNaN(ColorNumS)) {
+            var ColorNum = parseInt(ColorNumS);
+        }
+    }
+    while (!(ColorNum > 0 && ColorNum <= 7))
 
     var ColorName;
     switch (ColorNum) {

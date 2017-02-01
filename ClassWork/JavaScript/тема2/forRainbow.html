@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For</title>
+</head>
+<body>
+<script>
+    var ColorNameS = " ";
+    for (var ColorNum = 1; ColorNum <= 7; ColorNum++) {
+        var ColorName = " ";
+
+        switch (ColorNum) {
+            case 1:
+                ColorName = 'красный';
+                break;
+            case 2:
+                ColorName = 'оранжевый';
+                break;
+            case 3:
+                ColorName = 'жёлтый';
+                break;
+            case 4:
+                ColorName = 'зелёный';
+                break;
+            case 5:
+                ColorName = 'голубой';
+                break;
+            case 6:
+                ColorName = 'синий';
+                break;
+            case 7:
+                ColorName = 'фиолетовый';
+                break;
+
+        }
+
+        ColorNameS += " " + ColorName + "\n";
+    }
+    alert(ColorNameS);
+</script>
+</body>
+</html>
