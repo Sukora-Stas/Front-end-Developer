@@ -20,7 +20,7 @@
 
     var sex = confirm("Ваш пол мужской?") ? "Мужской" : "Женский";
 
-    var pension = confirm("Вы на пенсии?") ? "Да" : "Нет";
+    var pension = ((sex) && age >= 63) || (!sex && age >= 53) ? "да" : "нет";
 
     if (ageDay == undefined) {
         ageDay = "ты дибил, надо вводить число";

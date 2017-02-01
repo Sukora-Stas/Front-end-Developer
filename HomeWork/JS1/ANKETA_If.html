@@ -20,18 +20,16 @@
 
     var sex = confirm("Ваш пол мужской?");
 
-    var pension = confirm("Вы на пенсии?");
+    if (((sex) && age >= 63) || (!sex && age >= 53)) {
+        pension = "да";
+    } else {
+        pension = "нет";
+    }
 
     if (sex == true) {
         sex = "Мужской";
     } else {
         sex = "Женский";
-    }
-
-    if (pension == true) {
-        pension = "Да";
-    } else {
-        pension = "Нет";
     }
 
     if (ageDay == undefined) {
