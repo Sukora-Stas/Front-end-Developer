@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>apple</title>
+</head>
+<body>
+<script>
+    function GetNumWord(Num, Word1, Word2, Word5) {
+        var DD = Num % 100;
+        if ((DD >= 11) && (DD <= 19))
+            return Word5;
+        var D = Num % 10;
+        if (D == 1)
+            return Word1;
+        if ((D >= 2) && (D <= 4))
+            return Word2;
+        return Word5;
+    }
+
+    var ApplesS = prompt('Сколько у вас рублей?');
+    var Apples = parseInt(ApplesS);
+    console.log('У вас ' + Apples + ' ' + GetNumWord(Apples, 'рубль', 'рубля', 'рублей') + '!');
+
+</script>
+</body>
+</html>
