@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <META charset="utf-8">
+    <TITLE>Пример страницы</TITLE></HEAD>
+<BODY>
+<script>
+    var ColorsA =
+        {
+            ColorName: ["красный", "оранжевый", "жёлтый"],
+
+            ColorCheck: function () {
+                var ColorToPrint = parseInt(prompt('Какой номер цвета выводим?', 1));
+                console.log(this.ColorName[ColorToPrint - 1]);
+            },
+            ColorAdd: function () {
+                var elem = prompt("Введите значение которое нужно добавить")
+                this.ColorName.push(elem);
+            },
+            ColorPrintAll: function () {
+                for (var i = 0; i <= this.ColorName.length - 1; i++) {
+                    console.log(this.ColorName[i]);
+                }
+            }
+        };
+    ColorsA.ColorPrintAll();
+    ColorsA.ColorAdd();
+    ColorsA.ColorCheck();
+    ColorsA.ColorPrintAll();
+    /*
+     for ( var i=0; i<=6; i++ )
+     {
+     var ColorName=ColorsA[i];
+     console.log( ColorName );
+     }
+     */
+
+    /*var BeatlesH=
+     {
+     name : 'Beatles',
+     members : [ 'McCartney', 'Lennon', 'Harrison', 'Starr' ],
+     albums:
+     [
+     { name : 'Please Please Me', year : 1963 },
+     { name : 'With The Beatles', year : 1963 },
+     { name : "A Hard Day's Night", year : 1964 }
+     ]
+     };
+
+
+     BeatlesH.albums.push({name: 'Beatles For Sale',year: 1964});
+
+     for (var key in BeatlesH.albums)
+     console.log( BeatlesH.albums[key].name + '|' + BeatlesH.albums[key].year);
+     console.log('---------------------');
+     for (var i=0; i<=BeatlesH.albums.length-1; i++  )
+     console.log( BeatlesH.albums[i].name + '|' + BeatlesH.albums[i].year);*/
+</script>
+
+
+</BODY>
+</HTML>
