@@ -9,12 +9,24 @@
 
     var CountrysH = {'Германия': 'Берлин', 'Венгрия': 'Будапешт', 'Франция': 'Париж'};
 
-    console.log(CountrysH);
+    var CountryName = prompt('Введите название страны:');
 
-    CountrysH['Украина'] = 'Киев';
-
-    console.log(CountrysH);
+    if (CountryName in CountrysH)
+        console.log('страна: ' + CountryName + ' столица: ' + CountrysH[CountryName]);
+    else
+        console.log('нет информации о стране ' + CountryName + '!');
 
 </script>
+<!--<script>-->
+
+<!--var CountrysH = {'Германия': 'Берлин', 'Венгрия': 'Будапешт', 'Франция': 'Париж'};-->
+
+<!--console.log(CountrysH);-->
+
+<!--CountrysH['Украина'] = 'Киев';-->
+
+<!--console.log(CountrysH);-->
+
+<!--</script>-->
 </body>
 </html>
