@@ -3,64 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="CountryH.js"></script>
 </head>
 <body>
+<input type="button" value="Добавить" onclick="Add()">
+<input type="button" value="Получить информацию" onclick="Info()">
+<input type="button" value="Показать всё" onclick="ListAll()">
+<input type="button" value="Удалить" onclick="Dell()">
 <script>
+    function Add() {
+        var CountryName = prompt("Введите название страны");
+        var CapitalName = prompt("Введите название столицы");
 
-    var CountrysH = {};
-
-    function AddCountry(CountryName, CapitalName) {
-        CountrysH[CountryName] = CapitalName;
+        AddCountry(CountryName, CapitalName);
+        ListCountrys();
     }
-
-    function DeleteCountry(CountryName) {
-        delete CountrysH[CountryName];
+    function ListAll() {
+        console.log("список стран:" + ListCountrys());
     }
+    function Info() {
+        var country = prompt("Какая страна вас интересует?");
+        console.log(GetCountryInfo(country));
 
-    function GetCountryInfo(CountryName) {
-        if (CountryName in CountrysH)
-            return 'страна: ' + CountryName + ' столица: ' + CountrysH[CountryName];
-        else
-            return 'нет информации о стране ' + CountryName + '!';
     }
+    function Dell() {
+        var country = prompt("Какую стран уудалить?");
 
-    function ListCountrys() {
-        var Res = "";
-        for (var CN in CountrysH)
-            Res += '\n' + GetCountryInfo(CN);
-        return Res;
+        var test = 'нет информации о стране ' + country + '!';
+        var status = GetCountryInfo(country);
+        if (test != status) {
+            DeleteCountry(country);
+        }
+        else {
+            console.log(status + '\n' + 'удаление не удалось!');
+        }
     }
-
-    AddCountry('Германия', 'Берлин');
-    AddCountry('Венгрия', 'Будапешт');
-    AddCountry('Франция', 'Париж');
-
-    console.log("список стран:" + ListCountrys());
-
 </script>
-
-<!--<script>-->
-
-<!--var CountrysH = {'Германия': 'Берлин', 'Венгрия': 'Будапешт', 'Франция': 'Париж'};-->
-
-<!--var CountryName = prompt('Введите название страны:');-->
-
-<!--if (CountryName in CountrysH)-->
-<!--console.log('страна: ' + CountryName + ' столица: ' + CountrysH[CountryName]);-->
-<!--else-->
-<!--console.log('нет информации о стране ' + CountryName + '!');-->
-
-<!--</script>-->
-<!--<script>-->
-
-<!--var CountrysH = {'Германия': 'Берлин', 'Венгрия': 'Будапешт', 'Франция': 'Париж'};-->
-
-<!--console.log(CountrysH);-->
-
-<!--CountrysH['Украина'] = 'Киев';-->
-
-<!--console.log(CountrysH);-->
-
-<!--</script>-->
 </body>
 </html>
