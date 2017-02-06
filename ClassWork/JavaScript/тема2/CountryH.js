@@ -11,6 +11,9 @@ function DeleteCountry(CountryName) {
     delete CountrysH[CountryName];
 }
 
+/**
+ * @return {string}
+ */
 function GetCountryInfo(CountryName) {
     if (CountryName in CountrysH)
         return 'страна: ' + CountryName + ' столица: ' + CountrysH[CountryName];
@@ -18,6 +21,9 @@ function GetCountryInfo(CountryName) {
         return 'нет информации о стране ' + CountryName + '!';
 }
 
+/**
+ * @return {string}
+ */
 function ListCountrys() {
     var Res = "";
     for (var CN in CountrysH)
