@@ -27,7 +27,7 @@ function GetCountryInfo(CountryName) {
 function ListCountrys() {
     var Res = "";
     for (var CN in CountrysH)
-        Res += '\n' + GetCountryInfo(CN);
+        Res += '<br>'+'\n' + GetCountryInfo(CN);
     return Res;
 }
 

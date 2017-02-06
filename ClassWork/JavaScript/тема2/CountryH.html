@@ -4,22 +4,45 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="CountryH.js"></script>
+    <style>
+        input {
+            display: flex;
+            width: 16em;
+            height: 2em;
+        }
+
+        #result {
+            font-size: 1.5em;
+            color: lightcoral;
+        }
+    </style>
 </head>
 <body>
+<input type="text" placeholder="Страна" id="CountryInput">
+<input type="text" placeholder="Столица" id="CapitalInput">
 <input type="button" value="Добавить" onclick="Add()">
 <input type="button" value="Получить информацию" onclick="Info()">
 <input type="button" value="Показать всё" onclick="ListAll()">
 <input type="button" value="Удалить" onclick="Dell()">
+<div id="result"></div>
+
 <script>
+    var resultOutput = document.getElementById('result');
+    var CountryInput = document.getElementById('CountryInput');
+    var CapitalInput = document.getElementById('CapitalInput');
+
+    resultOutput.innerHTML = ListCountrys();
     function Add() {
-        var CountryName = prompt("Введите название страны");
-        var CapitalName = prompt("Введите название столицы");
+        var CountryName = CountryInput.value;
+        var CapitalName = CapitalInput.value;
+//        var CountryName = prompt("Введите название страны");
+//        var CapitalName = prompt("Введите название столицы");
 
         AddCountry(CountryName, CapitalName);
-        ListCountrys();
+        resultOutput.innerHTML = ListCountrys();
     }
     function ListAll() {
-        console.log("список стран:" + ListCountrys());
+        resultOutput.innerHTML = ListCountrys();
     }
     function Info() {
         var country = prompt("Какая страна вас интересует?");
