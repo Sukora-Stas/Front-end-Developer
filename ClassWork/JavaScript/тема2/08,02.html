@@ -15,14 +15,16 @@
         }
 
         .size {
+            color: lightgrey;
             padding: 20px;
             font-size: 100px;
             font-weight: bold;
         }
 
         .slide {
-            width: 500px;
-            height: 500px;
+            /*transition: 5s ease;*/
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -63,25 +65,39 @@
     }
 </script>
 <hr>
-<div id="gal">
-    <a class="btnLeft size" onclick="runSlide(-1)"><</a>
+<div id="gal" style="position: relative;width: 500px">
+
     <img class="slide" src="img/glasses-1.jpg">
     <img class="slide" src="img/glasses-2.jpg">
     <img class="slide" src="img/glasses-3.jpg">
-    <a class="btnRight size" onclick="runSlide(+1)">></a>
+    <a class="btnLeft size" onclick="runSlide(-1)" style="position: absolute;top:30%;"><</a>
+    <a class="btnRight size" onclick="runSlide(+1)" style="position: absolute;right: 0;top:30%;">></a>
 </div>
 <script>
     var slideIndex = 1;
     showSlide(slideIndex);
+    autoSlide();
     function runSlide(n) {
         showSlide(slideIndex += n);
     }
     function showSlide(n) {
         var x = document.getElementsByClassName('slide');
+        if (n > x.length) slideIndex = 1;
+        if (n < 1) slideIndex = x.length;
         for (var i = 0; i < x.length; i++) {
             x[i].style.display = 'none';
         }
         x[slideIndex - 1].style.display = 'block';
+    }
+    function autoSlide() {
+        var x = document.getElementsByClassName('slide');
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > x.length) slideIndex = 1;
+        x[slideIndex - 1].style.display = 'block';
+        setTimeout(autoSlide, 2000);
     }
 </script>
 </body>
