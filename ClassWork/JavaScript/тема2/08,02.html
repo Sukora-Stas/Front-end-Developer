@@ -13,6 +13,17 @@
             background-color: lightgreen;
             opacity: .5;
         }
+
+        .size {
+            padding: 20px;
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        .slide {
+            width: 500px;
+            height: 500px;
+        }
     </style>
 </head>
 <body>
@@ -53,22 +64,24 @@
 </script>
 <hr>
 <div id="gal">
-    <img class="slide" src="img/feature-1.png">
-    <img class="slide" src="img/feature-2.png">
-    <img class="slide" src="img/feature-3.png">
-    <a class="btnLeft" onclick="runSlide(-1)"><</a>
-    <a class="btnRight" onclick="runSlide(+1)">></a>
+    <a class="btnLeft size" onclick="runSlide(-1)"><</a>
+    <img class="slide" src="img/glasses-1.jpg">
+    <img class="slide" src="img/glasses-2.jpg">
+    <img class="slide" src="img/glasses-3.jpg">
+    <a class="btnRight size" onclick="runSlide(+1)">></a>
 </div>
 <script>
     var slideIndex = 1;
+    showSlide(slideIndex);
     function runSlide(n) {
         showSlide(slideIndex += n);
     }
     function showSlide(n) {
         var x = document.getElementsByClassName('slide');
-        for (var i = 0; i < x.length - 1; i++) {
+        for (var i = 0; i < x.length; i++) {
             x[i].style.display = 'none';
         }
+        x[slideIndex - 1].style.display = 'block';
     }
 </script>
 </body>
