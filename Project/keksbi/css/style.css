@@ -16,9 +16,7 @@ body {
 
 .page-header {
     height: 600px;
-    background-image: url("../img/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/header-bg.jpg") no-repeat center;
     background-size: cover;
     display: block;
 }
@@ -194,7 +192,7 @@ body {
     color: #a38b70;
 }
 
-.cat-reference dt+dd {
+.cat-reference dt + dd {
     display: flex;
     justify-content: space-between;
 }
@@ -203,15 +201,23 @@ body {
     font-size: 16px;
 }
 
+.abstract dt {
+    display: flex;
+    flex-direction: row;
+}
+
 .cat-reference dd img {
     border-radius: 5px;
 }
 
 .reference-title {
     font-size: 24px;
+
 }
 
 .reference-source {
+    margin: 25px 0 0 10px;
+    height: 20px;
     font-size: 16px;
     color: #666666;
     font-style: italic;
