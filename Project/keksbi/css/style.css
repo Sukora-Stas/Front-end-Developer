@@ -183,7 +183,7 @@ body {
     color: #a38b70;
     padding: 20px;
     border: solid 2px #a38b70;
-    margin: 50px 100px 0 0;
+    margin: 50px 0 0 0;
     font-size: 30px;
 }
 
@@ -255,9 +255,30 @@ body {
     color: rgba(141, 116, 90, 0.3);
 }
 
-.review-item {
-    font-size: 16px;
+.rev_btn {
+    width: 340px;
 
+}
+
+.rev {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews {
+    margin: 50px 0 50px 0;
+}
+
+.reviews-list {
+    margin-left: 40px;
+}
+
+.review-item {
+    margin-top: 0;
+    padding-left: 80px;
+    font-size: 16px;
+    width: 400px;
     border-left: 3px solid #a38b70;
 }
 
