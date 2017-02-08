@@ -9,8 +9,13 @@ body {
     background-color: white;
 }
 
+#hed {
+    width: 1300px;
+    margin: auto;
+}
+
 .contener {
-    width: 70%;
+    width: 1300px;
     margin: auto;
 }
 
@@ -36,7 +41,7 @@ body {
 }
 
 .position:first-child {
-    margin: 20px 0 0 200px;
+    margin: 20px 0 0 0;
 }
 
 .position {
@@ -76,7 +81,7 @@ body {
 .first-btn {
     padding: 20px;
     border: solid 2px white;
-    margin: 18px 170px 18px 100px;
+    margin: 18px 0 18px 100px;
     font-size: 30px;
 }
 
