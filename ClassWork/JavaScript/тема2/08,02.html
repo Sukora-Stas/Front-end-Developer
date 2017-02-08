@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08.02</title>
+</head>
+<body>
+<input type="button" id="btn" onclick="changeType(this)" value="click">
+<script>
+    var types = ['text', 'checkbox', 'radio', 'button'];
+    var el = document.getElementById('btn');
+    var i = 0;
+    function changeType(el) {
+        el.setAttribute('type', types[i]);
+        el.value = types[i];
+        i++;
+        if (i == types.length) {
+            i = 0;
+        }
+    }
+
+</script>
+</body>
+</html>
