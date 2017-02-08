@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>08.02</title>
+    <style>
+        .wrong {
+            background-color: lightcoral;
+            opacity: .5;
+        }
+
+        .accept {
+            background-color: lightgreen;
+            opacity: .5;
+        }
+    </style>
 </head>
 <body>
 <input type="button" id="btn" onclick="changeType(this)" value="click">
@@ -13,12 +24,52 @@
     function changeType(el) {
         el.setAttribute('type', types[i]);
         el.value = types[i];
-        i++;
-        if (i == types.length) {
-            i = 0;
+//        i++;
+        i = (i == types.length - 1) ? 0 : i += 1;
+    }
+</script>
+<br>
+<form name='pass' action='http://fe.it-academy.by/TestForm.php'>
+    Password: <input type='password' name='firstPass'><br>
+    Repeat: <input type='password' name='repeatPass'><br>
+    <textarea name="result" disabled></textarea>
+</form>
+<script>
+    var el = document.forms['pass'];
+    el.onkeyup = checkPass;
+    function checkPass() {
+        if (el.elements['firstPass'].value == el.elements['repeatPass'].value) {
+            el.elements['result'].value = 'Пароли совпадают';
+            el.elements['firstPass'].className = 'accept';
+            el.elements['repeatPass'].className = 'accept';
+
+        } else {
+            el.elements['result'].value = 'Пароли не совпадают';
+            el.elements['firstPass'].className = 'wrong';
+            el.elements['repeatPass'].className = 'wrong';
+        }
+
+    }
+</script>
+<hr>
+<div id="gal">
+    <img class="slide" src="img/feature-1.png">
+    <img class="slide" src="img/feature-2.png">
+    <img class="slide" src="img/feature-3.png">
+    <a class="btnLeft" onclick="runSlide(-1)"><</a>
+    <a class="btnRight" onclick="runSlide(+1)">></a>
+</div>
+<script>
+    var slideIndex = 1;
+    function runSlide(n) {
+        showSlide(slideIndex += n);
+    }
+    function showSlide(n) {
+        var x = document.getElementsByClassName('slide');
+        for (var i = 0; i < x.length - 1; i++) {
+            x[i].style.display = 'none';
         }
     }
-
 </script>
 </body>
 </html>
