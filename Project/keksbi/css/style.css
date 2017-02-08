@@ -194,6 +194,11 @@ body {
     color: #a38b70;
 }
 
+.cat-reference dt+dd {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cat-reference dd {
     font-size: 16px;
 }
