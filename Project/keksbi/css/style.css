@@ -498,6 +498,14 @@ table tr td:last-child {
     text-decoration: none;
 }
 
+.footer-menu a:hover {
+    color: #ffffff;
+}
+
+.footer-menu a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-bottom b {
     font-size: 24px;
     font-family: "Georgia", serif;
@@ -506,10 +514,18 @@ table tr td:last-child {
 }
 
 .footer-bottom a {
-    font-size: 24px;
+    font-size: 16px;
     font-family: "Georgia", serif;
     color: #a38b70;
 
+}
+
+.footer-bottom a:hover {
+    color: #8d745a;
+}
+
+.footer-bottom a:active {
+    color: rgba(141, 116, 90, 0.3);
 }
 
 .footer-social b:hover {
