@@ -15,7 +15,7 @@ body {
 }
 
 .contener {
-    width: 1300px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -396,6 +396,11 @@ table tr td:last-child {
     width: 500px;
 }
 
+.feedback {
+    /*height: 700px;*/
+    overflow: hidden;
+}
+
 .feedback-tip {
     font-size: 20px;
     margin: 0;
@@ -404,13 +409,47 @@ table tr td:last-child {
 }
 
 .feedback-form {
+    margin: 80px 0 0 80px;
     padding-right: 390px;
+    height: 600px;
+    background: url("../img/write.jpg") no-repeat 100% 0;
+}
 
-    background: url("../img/write.jpg") no-repeat 100% 40px;
+.pos {
+    padding-top: 0;
+
+    top: -33px;
+}
+
+.feedback-form-group:first-child {
+    margin-left: 0;
+}
+
+.feedback-form-group label {
+    padding-left: 20px;
+}
+
+.left-m {
+    margin-left: 20px;
 }
 
 .feedback-form-group {
+    position: relative;
+    width: 100%;
+
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form-group-align div {
+    top: -33px;
+}
+
+.feedback-form-group-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .feedback-form-group label {
