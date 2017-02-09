@@ -95,10 +95,12 @@ body {
 
 .btn:hover {
     color: #8d745a;
+    border: solid 2px #8d745a;
 }
 
 .btn:active {
     color: rgba(141, 116, 90, 0.3);
+    border: solid 2px rgba(141, 116, 90, 0.3);
 }
 
 .promo {
@@ -489,8 +491,17 @@ table tr td:last-child {
     border-color: #8d745a;
 }
 
+.fee-btn {
+    position: relative;
+    top: 70px;
+}
+
+.last-poz {
+    top: 20px;
+}
+
 #topic {
-    height: 50px;
+    min-height: 50px;
 }
 
 .checkbox-area {
