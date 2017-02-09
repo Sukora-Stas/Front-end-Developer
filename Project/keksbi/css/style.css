@@ -537,6 +537,11 @@ table tr td:last-child {
     color: rgba(141, 116, 90, 0.3);
 }
 
+.foot_btn {
+    width: 220px;
+    text-align: center;
+}
+
 .footer-bottom {
     padding-top: 60px;
     padding-bottom: 50px;
