@@ -103,7 +103,7 @@ body {
 
 .promo {
 
-    padding-top: 60px;
+    padding-top: 150px;
     font-weight: bold;
     font-size: 55px;
     line-height: 55px;
@@ -118,7 +118,7 @@ body {
 
 .features ul {
     padding: 0;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 50px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -179,7 +179,9 @@ body {
 }
 
 .last-btn {
-    height: 25px;
+    width: 227px;
+    height: 23px;
+    text-align: center;
     color: #a38b70;
     padding: 20px;
     border: solid 2px #a38b70;
@@ -267,7 +269,7 @@ body {
 }
 
 .reviews {
-    margin: 50px 0 50px 0;
+    margin: 50px 0;
 }
 
 .reviews-list {
@@ -289,18 +291,62 @@ body {
 
 .popular-and-price {
     background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.popular-and-price h2 {
+    padding: 70px 0 50px 80px;
+}
+
+.popular-and-price table {
+    margin-left: 80px;
+    width: 1220px;
+}
+
+table tr td:last-child {
+    width: 227px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 16px 16px 16px;
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item_btn {
+    background-color: #a38b70;
+    border: solid 1px #a38b70;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.i_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .popular-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-left: 80px;
+    overflow: hidden;
 }
 
 .catalog-item {
     width: 306px;
-    border: solid #d8d8d8 .5px;
+    border: solid #d8d8d8 1px;
     font-size: 16px;
+
 }
 
 .catalog-item h3 {
@@ -310,7 +356,7 @@ body {
 
 .price-list {
     width: 100%;
-
+    margin-bottom: 100px;
     border-collapse: collapse;
     line-height: 30px;
 }
@@ -340,8 +386,21 @@ body {
     color: #000000;
 }
 
+.feeb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feeb-sect {
+    width: 500px;
+}
+
 .feedback-tip {
-    font-size: 16px;
+    font-size: 20px;
+    margin: 0;
+    height: 25px;
+    padding-top: 70px;
 }
 
 .feedback-form {
@@ -388,9 +447,34 @@ body {
     margin-top: 20px;
 }
 
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 40px 80px;
+}
+
+.footer-logo {
+    height: 70px;
+    margin-top: 20px;
+}
+
 .footer-middle,
 .footer-bottom {
     border-top: 1px solid #5e5e5e;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 30px;
+    margin-left: 80px;
+}
+
+.footer-menu {
+    margin-left: 50px;
+}
+
+.footer-menu:first-child {
+    margin: 0;
 }
 
 .footer-menu h3 {
@@ -402,10 +486,15 @@ body {
 
 .footer-menu ul {
     list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    padding-bottom: 20px;
 }
 
 .footer-menu a {
-    font-size: 16px;
+    font-size: 18px;
     color: #c3c3c3;
     text-decoration: none;
 }
@@ -418,30 +507,42 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-social b {
+.footer-bottom b {
     font-size: 24px;
     font-family: "Georgia", serif;
     color: #a38b70;
+
 }
 
-.social-btn {
-    color: #ffffff;
+.footer-bottom a {
+    font-size: 16px;
+    font-family: "Georgia", serif;
+    color: #a38b70;
+
 }
 
-.footer-copyright {
-    color: #ffffff;
-    text-transform: uppercase;
+.footer-bottom a:hover {
+    color: #8d745a;
 }
 
-.footer-copyright a {
-    color: #ffffff;
-    text-decoration: none;
+.footer-bottom a:active {
+    color: rgba(141, 116, 90, 0.3);
 }
 
-.footer-copyright a:hover {
-    text-decoration: underline;
+.footer-social b:hover {
+    color: #8d745a;
 }
 
-.footer-copyright a:active {
-    color: rgba(255, 255, 255, 0.3);
+.footer-social b:active {
+    color: rgba(141, 116, 90, 0.3);
+}
+
+.footer-bottom {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+.footer-social a {
+    margin-left: 20px;
 }
