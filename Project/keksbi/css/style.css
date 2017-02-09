@@ -386,8 +386,21 @@ table tr td:last-child {
     color: #000000;
 }
 
+.feeb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feeb-sect {
+    width: 500px;
+}
+
 .feedback-tip {
-    font-size: 16px;
+    font-size: 20px;
+    margin: 0;
+    height: 25px;
+    padding-top: 70px;
 }
 
 .feedback-form {
@@ -434,9 +447,33 @@ table tr td:last-child {
     margin-top: 20px;
 }
 
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 40px 0;
+}
+
+.footer-logo {
+    height: 70px;
+    margin-top: 20px;
+}
+
 .footer-middle,
 .footer-bottom {
     border-top: 1px solid #5e5e5e;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+.footer-menu {
+    margin-left: 50px;
+}
+
+.footer-menu:first-child {
+    margin: 0;
 }
 
 .footer-menu h3 {
@@ -448,46 +485,47 @@ table tr td:last-child {
 
 .footer-menu ul {
     list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    padding-bottom: 20px;
 }
 
 .footer-menu a {
-    font-size: 16px;
+    font-size: 18px;
     color: #c3c3c3;
     text-decoration: none;
 }
 
-.footer-menu a:hover {
-    color: #ffffff;
-}
-
-.footer-menu a:active {
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-social b {
+.footer-bottom b {
     font-size: 24px;
     font-family: "Georgia", serif;
     color: #a38b70;
+
 }
 
-.social-btn {
-    color: #ffffff;
+.footer-bottom a {
+    font-size: 24px;
+    font-family: "Georgia", serif;
+    color: #a38b70;
+
 }
 
-.footer-copyright {
-    color: #ffffff;
-    text-transform: uppercase;
+.footer-social b:hover {
+    color: #8d745a;
 }
 
-.footer-copyright a {
-    color: #ffffff;
-    text-decoration: none;
+.footer-social b:active {
+    color: rgba(141, 116, 90, 0.3);
 }
 
-.footer-copyright a:hover {
-    text-decoration: underline;
+.footer-bottom {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    justify-content: space-between;
 }
 
-.footer-copyright a:active {
-    color: rgba(255, 255, 255, 0.3);
+.footer-social a {
+    margin-left: 20px;
 }
