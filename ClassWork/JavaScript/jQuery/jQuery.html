@@ -24,11 +24,15 @@
                 }
             );
             /////////////////////////////////
+
+
             $('#hide').click(function () {
                 $(this).hide();
             });
+
+
             $('#hide-table').click(function () {
-                $('#table_date').toggle();
+                $('#table_date').toggle('slow');
                 if ($('#table_date').is(':visible')) {
 //                    $('#table_date').hide();
                     $(this).val("Hide table!");
@@ -38,9 +42,13 @@
                     $(this).val("Show table!");
                 }
             });
+
+
             $('#color').click(function () {
                 $('#table_date tr:even').toggleClass('color')
             });
+
+
             $('tr').click(function () {
                 $('#hide-tr').removeAttr('disabled');
                 $(this).hide();
@@ -49,11 +57,15 @@
                 else
                     $('#hide-tr').val('Have hide tr!');
             });
+
+
             $('#hide-tr').click(function () {
                 $('tr').show();
                 $('#hide-tr').val('Don\'t have hide tr!');
                 $('#hide-tr').attr('disabled', 'yes');
-            })
+            });
+
+
         })
 
     </script>
