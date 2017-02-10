@@ -40,6 +40,19 @@
             });
             $('#color').click(function () {
                 $('#table_date tr:even').toggleClass('color')
+            });
+            $('tr').click(function () {
+                $('#hide-tr').removeAttr('disabled');
+                $(this).hide();
+                if ($('#table_date tr:visible').length == $('#table_date tr').length)
+                    $('#hide-tr').val('Don\'t have hide tr!');
+                else
+                    $('#hide-tr').val('Have hide tr!');
+            });
+            $('#hide-tr').click(function () {
+                $('tr').show();
+                $('#hide-tr').val('Don\'t have hide tr!');
+                $('#hide-tr').attr('disabled', 'yes');
             })
         })
 
@@ -60,6 +73,7 @@
 <input type="button" id="hide" value="Hide!">
 <input type="button" id="hide-table" value="Hide table!">
 <input type="button" id="color" value="Color!">
+<input type="button" id="hide-tr" value="Don't have hide tr!">
 <table id="table_date">
     <caption>данные о сотрудниках</caption>
     <tr>
