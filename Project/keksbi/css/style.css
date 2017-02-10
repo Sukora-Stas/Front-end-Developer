@@ -59,6 +59,7 @@ body {
 
 .main-nav a:hover {
     text-decoration: underline;
+    opacity: .7;
 }
 
 .main-nav a:active {
@@ -332,6 +333,19 @@ table tr td:last-child {
     margin: 10px;
     width: 100px;
     text-align: center;
+}
+
+.item_btn:hover {
+    color: white;
+    background-color: #8d745a;
+    border: solid 1px #8d745a;
+}
+
+.item_btn:active {
+    color: white;
+    background-color: #8d745a;
+    border: solid 1px #8d745a;
+    opacity: .5;
 }
 
 .i_btn {
