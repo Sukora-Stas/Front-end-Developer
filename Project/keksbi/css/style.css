@@ -9,11 +9,6 @@ body {
     background-color: white;
 }
 
-#hed {
-    width: 1300px;
-    margin: auto;
-}
-
 .contener {
     width: 1300px;
     margin: auto;
@@ -40,10 +35,6 @@ body {
     background-color: #363636;
 }
 
-.position:first-child {
-    margin: 20px 0 0 0;
-}
-
 .position {
     display: flex;
     flex-direction: row;
@@ -51,10 +42,6 @@ body {
 
 .main-nav {
     list-style: none;
-
-}
-
-.header-logo {
 
 }
 
@@ -83,6 +70,23 @@ body {
     border: solid 2px white;
     margin: 18px 0 18px 100px;
     font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-logo {
+    margin: 20px 0 0 0;
+    padding: 0;
+    border: none;
+}
+
+.first-btn:hover {
+    opacity: .7;
+}
+
+.first-btn:active {
+    opacity: .4;
 }
 
 .btn {
