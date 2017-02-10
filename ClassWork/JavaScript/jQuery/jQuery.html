@@ -22,7 +22,26 @@
                 function () {
                     $('#table_date tr:odd').removeClass('zebra');
                 }
-            )
+            );
+            /////////////////////////////////
+            $('#hide').click(function () {
+                $(this).hide();
+            });
+            $('#hide-table').click(function () {
+                $('#table_date').toggle();
+                if ($('#table_date').is(':visible')) {
+//                    $('#table_date').hide();
+                    $(this).val("Hide table!");
+                }
+                else {
+                    //$('#table_date').show();
+                    $(this).val("Show table!");
+                }
+            });
+            $('#color').click(function () {
+                $('#color').toggle();
+                $('#table_date tr:even').addClass('color');
+            })
         })
 
     </script>
@@ -31,10 +50,17 @@
             background-color: lightcoral;
             color: white;
         }
+
+        .color {
+            background-color: lightgreen;
+
+        }
     </style>
 </head>
 <body>
 <input type="button" id="hide" value="Hide!">
+<input type="button" id="hide-table" value="Hide table!">
+<input type="button" id="color" value="Color!">
 <table id="table_date">
     <caption>данные о сотрудниках</caption>
     <tr>
