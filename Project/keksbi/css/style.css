@@ -9,6 +9,12 @@ body {
     background-color: white;
 }
 
+.zebra {
+    background-color: #a08b70;
+
+    color: white;
+}
+
 .contener {
     width: 1300px;
     margin: auto;
