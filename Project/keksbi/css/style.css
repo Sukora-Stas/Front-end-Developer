@@ -111,7 +111,7 @@ body {
 
 .btn:active {
     color: rgba(141, 116, 90, 0.3);
-    border: solid 2px rgba(141, 116, 90, 0.3);
+    //border: solid 2px rgba(141, 116, 90, 0.3);
 }
 
 .promo {

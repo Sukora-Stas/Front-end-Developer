@@ -12,7 +12,20 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 body {
+
     line-height: 1;
+    width: 40%;
+    margin: auto;
+
+}
+
+p {
+    position: relative;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    top: 5px;
+    left: -20px;
 }
 
 ol, ul {
@@ -447,7 +460,7 @@ body {
     width: 400px;
     height: 800px;
     left: 50%;
-    top: 20px;
+    top: 115px;
     margin-left: -200px;
 }
 
