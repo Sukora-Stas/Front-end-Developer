@@ -14,27 +14,15 @@ $(function () {
         }
     );
     /////////////////////////
-    // var site = 'gallery.html';
-    //
-    // $('#test').click(function () {
-    //
-    //         //noinspection JSValidateTypes
-    //         if(location.href==('gallery.html').statusCode){
-    //
-    //             location.href = 'gallery.html'
-    //
-    //     }
-    //     else
-    //         location.href = 'EROR404/eror404.html';
-    //
-    // });
+    var site = 'gallery.html';
+
+    $('#test').click(function () {
+        location.href = ('EROR404/eror404.html');
+    });
 
 
     $('.header-logo').click(function () {
         location.href = 'index.html';
     });
 
-
 });
-
-// window.location = "EROR404/eror404.html";
