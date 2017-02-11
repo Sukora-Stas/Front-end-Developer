@@ -28,3 +28,29 @@
     color: #c3c3c3;
     background-color: #363636;
 }
+
+.item img{
+    margin: auto;
+    border-radius: 50px;
+    text-align: center;
+    max-width: 500px;
+    max-height:500px;
+    min-width: 500px;
+    min-height:500px;
+}
+.carousel-control:first-of-type{
+    border-radius: 50px 0 0 50px;
+}
+
+.carousel-control:last-of-type{
+    border-radius: 0 50px 50px 0;
+}
+
+.carousel{
+
+    margin: 0 auto;
+    width: 1000px;
+}
+.body{
+    margin-top: 50px;
+}
