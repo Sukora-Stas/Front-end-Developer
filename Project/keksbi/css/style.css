@@ -65,11 +65,12 @@ body {
 
 .main-nav a:hover {
     text-decoration: underline;
-    opacity: .7;
+
 }
 
 .main-nav a:active {
     color: rgba(255, 255, 255, 0.3);
+    opacity: .5;
 }
 
 .first-btn {

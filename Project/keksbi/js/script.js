@@ -14,14 +14,14 @@ $(function () {
         }
     );
     /////////////////////////
-    // var site = 'order.html';
+    // var site = 'gallery.html';
     //
     // $('#test').click(function () {
     //
     //         //noinspection JSValidateTypes
-    //         if(location.href==('order.html').statusCode){
+    //         if(location.href==('gallery.html').statusCode){
     //
-    //             location.href = 'order.html'
+    //             location.href = 'gallery.html'
     //
     //     }
     //     else
