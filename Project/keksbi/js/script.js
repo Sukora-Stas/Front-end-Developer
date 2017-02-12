@@ -71,10 +71,44 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('google'), {
         zoom: 15,
         center: piramid,
-        zoomControl: false,
+        zoomControl: false
     });
     var marker = new google.maps.Marker({
         position: piramid,
         map: map
     });
+}
+
+var FormElement = document.forms['INFO'];
+FormElement.onsubmit = ValidateInfoForm;
+
+function ValidateInfoForm() {
+    var FormElement = document.forms['INFO'];
+
+    var FIOElement = FormElement.elements['fullname'];
+    var AgeElement = FormElement.elements['phone'];
+
+    var FIOValue = FIOElement.value;
+    var AgeValue = parseInt(AgeElement.value);
+
+    if (FIOValue.length > 30) {
+        alert('Введите пожалуйста ФИО не длиннее 30 символов!');
+        FIOElement.focus();
+        return false;
+    }
+
+    if (isNaN(AgeValue)) {
+        alert('Введите пожалуйста в поле возраста корректную цифру!');
+
+        AgeElement.focus();
+        return false;
+    }
+
+    if (AgeValue < 16) {
+        alert('Возраст должен быть не менее 16 лет!');
+        AgeElement.focus();
+        return false;
+    }
+
+    return true;
 }

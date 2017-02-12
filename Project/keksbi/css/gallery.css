@@ -29,7 +29,7 @@
     transition: all .7s ease;
 }
 
-.galery img:hover{
+.galery img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }

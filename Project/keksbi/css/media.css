@@ -122,6 +122,16 @@
     .footer-bottom {
         margin-right: 100px;
     }
+
+    .map {
+        padding-left: 120px;
+        margin-right: 100px;
+    }
+
+    .map2 {
+        padding-left: 0;
+        margin-right: 100px;
+    }
 }
 
 @media all and (max-width: 1110px) {
@@ -236,6 +246,14 @@
         margin-left: 0;
     }
 
+    .map {
+        padding-left: 0;
+    }
+
+    .map2 {
+        padding-left: 0;
+    }
+
 }
 
 @media all and (max-width: 950px) {
@@ -249,6 +267,14 @@
 
     .galery img:nth-child(odd) {
         margin-right: 0;
+    }
+
+    .map {
+        padding-left: 0;
+    }
+
+    .map2 {
+        padding-left: 0;
     }
 }
 
@@ -278,6 +304,15 @@
         margin-right: 0;
     }
 
+    .map {
+        padding-left: 0;
+        margin-right: 15px;
+    }
+
+    .map2 {
+        padding-left: 0;
+        margin-right: 15px;
+    }
 }
 
 
