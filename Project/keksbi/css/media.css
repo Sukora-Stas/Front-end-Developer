@@ -224,3 +224,32 @@
     }
 
 }
+
+@media all and (max-width: 950px) {
+    .contener {
+        width: 800px;
+    }
+
+}
+
+@media all and (max-width: 830px) {
+    .contener {
+        width: 700px;
+    }
+
+    .contener table {
+        width: 600px;
+    }
+
+    .feedback-form {
+        background: none;
+        width: 530px;
+    }
+
+    .footer-middle, .footer-bottom {
+        margin-right: 15px;
+    }
+
+}
+
+
