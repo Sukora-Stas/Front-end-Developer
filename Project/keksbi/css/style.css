@@ -66,6 +66,8 @@ body {
 
 .main-nav a:hover {
     text-decoration: underline;
+    color: white;
+    cursor: pointer;
 
 }
 
@@ -92,6 +94,9 @@ body {
 
 .first-btn:hover {
     opacity: .7;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .first-btn:active {
@@ -128,6 +133,12 @@ body {
 
 .promo a {
     color: #ffffff;
+    text-decoration: none;
+}
+
+.promo a:hover {
+    color: #ffffff;
+    cursor: default;
     text-decoration: none;
 }
 
@@ -603,7 +614,7 @@ table tr td:last-child {
     font-size: 24px;
     font-family: "Georgia", serif;
     color: #a38b70;
-
+    cursor: default;
 }
 
 .footer-bottom a {
