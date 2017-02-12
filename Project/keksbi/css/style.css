@@ -142,6 +142,10 @@ body {
     text-decoration: none;
 }
 
+.features-test {
+    display: block;
+}
+
 .features ul {
     padding: 0;
     margin: 50px 0 50px 50px;
@@ -498,7 +502,7 @@ table tr td:last-child {
 }
 
 .feedback-form-group {
-    height: 50px;
+    min-height: 50px;
 }
 
 .feedback-form-group label {
@@ -507,7 +511,7 @@ table tr td:last-child {
     padding-bottom: 3px;
 }
 
-.feedback-form input[type="text"],
+.feedback-form input,
 .feedback-form select,
 .feedback-form textarea {
     font: inherit;
@@ -516,13 +520,13 @@ table tr td:last-child {
     border: 2px solid #d5d5d5;
 }
 
-.feedback-form input[type="text"]:hover,
+.feedback-form input:hover,
 .feedback-form select:hover,
 .feedback-form textarea:hover {
     border-color: #bebebe;
 }
 
-.feedback-form input[type="text"]:focus,
+.feedback-form input:focus,
 .feedback-form select:focus,
 .feedback-form textarea:focus {
     border-color: #8d745a;
@@ -667,4 +671,12 @@ table tr td:last-child {
 
 .map2 {
     padding-left: 150px;
+}
+
+#cursor {
+    width: 7em;
+    height: 3.2em;
+    border: 1px solid;
+    position: absolute;
+    text-align: right;
 }

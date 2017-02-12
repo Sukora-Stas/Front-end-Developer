@@ -27,7 +27,42 @@ $(function () {
 
     $('#hide').click(function () {
         $('.galery').toggle('slow');
+
     });
+
+    $('.features').css('display', 'none');
+    $('.features').fadeIn(1200);
+
+    $('.cat-reference').css('display', 'none');
+    $('.cat-reference').fadeIn(1200);
+
+    $('.reviews').css('display', 'none');
+    $('.reviews').fadeIn(1200);
+
+    $('.popular-and-price').css('display', 'none');
+    $('.popular-and-price').fadeIn(1200);
+
+    $('.feedback').css('display', 'none');
+    $('.feedback').fadeIn(1200);
+
+    $('.page-footer').css('display', 'none');
+    $('.page-footer').fadeIn(1200);
+
+    $('.contener').css('display', 'none');
+    $('.contener').fadeIn(1200);
+
+    $('.page-header-gallery').css({
+        'height': '0'
+    });
+    $('.page-header-gallery').animate({
+        'height': '600px'
+    }, 1500);
+    $('.page-header').css({
+        'height': '0'
+    });
+    $('.page-header').animate({
+        'height': '600px'
+    }, 1500);
 
 });
 
