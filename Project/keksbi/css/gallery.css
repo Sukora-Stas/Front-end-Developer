@@ -22,6 +22,16 @@
     margin: 40px 0 50px 0;
     padding: 10px;
     border: solid 4px #8d745a;
+    transform: scale(.8);
+    position: relative;
+
+    box-shadow: 0 0 1em black;
+    transition: all .7s ease;
+}
+
+.galery img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .galery img:nth-child(odd) {
