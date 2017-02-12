@@ -16,7 +16,7 @@ $(function () {
     /////////////////////////
     var site = 'gallery.html';
 
-    $('#test').click(function () {
+    $('.error404').click(function () {
         location.href = ('EROR404/eror404.html');
     });
 
