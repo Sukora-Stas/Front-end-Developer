@@ -1,3 +1,14 @@
+.first-btn {
+    line-height: .8;
+}
+
+.header-top ul {
+    margin-top: 14px;
+}
+
+.page-header-gallery {
+    box-sizing: content-box;
+}
 
 .galery {
     display: none;
@@ -27,7 +38,6 @@
     background-size: cover;
     display: block;
     padding: 10px;
-    color: #c3c3c3;
     background-color: #363636;
 }
 

@@ -563,7 +563,7 @@ table tr td:last-child {
 }
 
 .footer-middle,
-.footer-bottom {
+.footer-bottom, .map {
     border-top: 1px solid #5e5e5e;
     display: flex;
     flex-direction: row;
@@ -653,4 +653,18 @@ table tr td:last-child {
 
 .footer-social a {
     margin-left: 20px;
+}
+
+#google {
+    height: 15em;
+    width: 50em;
+}
+
+.map {
+    padding-left: 270px;
+    padding-bottom: 30px;
+}
+
+.map2 {
+    padding-left: 150px;
 }
