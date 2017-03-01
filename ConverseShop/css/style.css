@@ -1,0 +1,86 @@
+* { margin: 0;
+    padding: 0;}
+
+.flex-container { display: flex;
+    justify-content: flex-center;
+    flex-direction: row; }
+
+.flex-container1 { display: flex;
+
+    text-align: center;}
+
+.flex-info { flex-grow: 1;  padding: 5px; font-family: cursive; color: red; }
+
+.flex-element-1 {background-color: red;
+    flex: 0 1 20%;  text-align: center;
+}
+
+
+.menu {
+    text-decoration: none;
+    font-family: cursive;
+    background: red;
+    color:#fff;
+    padding:0px 25px;
+    line-height:30px;
+    display: block;
+    border-right: 1px solid #F36262;
+    -moz-transition: all 0.3s 0.01s ease;
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+
+}
+.menu:hover {
+    background: tomato;/*亟仂弍舒于仍�磳仄 ���亠从� 仗�亳 仆舒于亠亟亠仆亳亳*/
+}
+
+.btn-left, .btn-right {
+    display: block;
+    position: absolute;
+    top: 50%;
+    opacity: 0.1;
+
+    background-color: azure;
+    font-size: 5em;
+    cursor: pointer;
+}
+.btn-left {left: 0; }
+.btn-right {right: 0;}
+#gal {
+    margin: auto; position: relative;
+    width: 100%;
+}
+#gal img {width: 100% ; height: 450px}
+
+.text { text-align: center; padding: 50px; font-family: cursive; font-size: 1.1em;}
+
+.kod { text-align: center; float: right;  width: 100%;
+    background-color: red; font-family: cursive; color: azure;
+}
+.koM { border: double red 2px; width: 400px;}
+.inputField input {	width: 99%;}
+.kod:hover { background: tomato;}
+
+#yandex {height: 30em;
+    width: 100%;}
+.toter { text-align: center;}
+
+.fot { float: left;}
+@media all and (max-width: 1000px)
+{
+
+    .flex-container { flex-direction: column; }
+
+    div[class*="flex-element"] {
+        flex: 2em;
+        margin-bottom: 5px; }
+
+    .koM { border: double red 2px; width: 100%;}
+    .text { text-align: center; padding: 1px; font-family: cursive; font-size: 1.1em;}
+    .flex-container1 { flex-direction: column;  text-align: center;}
+    .fot { float: none;}
+
+    div[class*="flex-info"] {
+        flex: 2 1 3em;
+        margin-bottom: 10px; text-align: center; }
+}
