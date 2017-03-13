@@ -346,13 +346,6 @@ body.fb_hidden {
     vertical-align: middle
 }
 
-.fb_dialog_content .dialog_content {
-    background: url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
-    border: 1px solid #555;
-    border-bottom: 0;
-    border-top: 0;
-    height: 150px
-}
 
 .fb_dialog_content .dialog_footer {
     background: #f6f7f9;
@@ -371,16 +364,6 @@ body.fb_hidden {
 
 .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
     visibility: hidden
-}
-
-#fb_dialog_loader_spinner {
-    animation: rotateSpinner 1.2s linear infinite;
-    background-color: transparent;
-    background-image: url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 24px;
-    width: 24px
 }
 
 @keyframes rotateSpinner {
