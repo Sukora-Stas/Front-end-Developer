@@ -59,7 +59,6 @@ table {
     right: 0;
     bottom: 0;
     z-index: 9999999;
-    background: url(../img/black70.png);
     background: rgba(0, 0, 0, 0.7)
 }
 
@@ -978,11 +977,6 @@ nav ul li a span.icon-diadora {
     background-size: 40px auto
 }
 
-nav ul li a span.icon-saucony {
-    background: url(../img/icon-nav-saucony.png) center center no-repeat;
-    background-size: 40px auto
-}
-
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     nav ul li a span.icon-nike {
         background-image: url(../img/icon-nav-nike@2x.png);
@@ -1000,7 +994,7 @@ nav ul li a span.icon-saucony {
     }
 
     nav ul li a span.icon-puma {
-        background-image: url(../images/icon-nav-puma@2x.png);
+        background-image: url(../img/icon-nav-puma@2x.png);
         background-size: 40px auto
     }
 
@@ -1031,11 +1025,6 @@ nav ul li a span.icon-saucony {
 
     nav ul li a span.icon-diadora {
         background-image: url(../img/icon-nav-diadora@2x.png);
-        background-size: 40px auto
-    }
-
-    nav ul li a span.icon-saucony {
-        background-image: url(../img/icon-nav-saucony@2x.png);
         background-size: 40px auto
     }
 }
@@ -1149,17 +1138,17 @@ nav#sub-nav ul li a {
 }
 
 .icon-shipping-white {
-    background: url(../images/icon-shipping-white@2x.png) center center no-repeat;
+    background: url(../img/icon-shipping-white@2x.png) center center no-repeat;
     background-size: 13px auto
 }
 
 .icon-returns-white {
-    background: url(../images/icon-returns-white@2x.png) center center no-repeat;
+    background: url(../img/icon-returns-white@2x.png) center center no-repeat;
     background-size: 13px auto
 }
 
 .icon-contact-white {
-    background: url(../images/icon-contact-white@2x.png) center center no-repeat;
+    background: url(../img/icon-contact-white@2x.png) center center no-repeat;
     background-size: 13px auto
 }
 
@@ -1204,23 +1193,23 @@ a.tool .label {
     width: 14px;
     height: 14px;
     margin-left: 4px;
-    background: url(../images/icon-search.png) center center no-repeat
+    background: url(../img/icon-search.png) center center no-repeat
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icon-search {
-        background-image: url(../images/icon-search@2x.png);
+        background-image: url(../img/icon-search@2x.png);
         background-size: 13px auto
     }
 }
 
 #topbar #to-search.opened .icon-search {
-    background: url(../images/icon-cart-close.png) center center no-repeat
+    background: url(../img/icon-cart-close.png) center center no-repeat
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #topbar #to-search.opened .icon-search {
-        background-image: url(../images/icon-cart-close@2x.png);
+        background-image: url(../img/icon-cart-close@2x.png);
         background-size: 12px auto
     }
 }
@@ -1230,12 +1219,12 @@ a.tool .label {
     width: 12px;
     height: 12px;
     margin-left: 4px;
-    background: url(../images/icon-account.png) center center no-repeat
+    background: url(../img/icon-account.png) center center no-repeat
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icon-account {
-        background-image: url(../images/icon-account@2x.png);
+        background-image: url(../img/icon-account@2x.png);
         background-size: 12px auto
     }
 }
@@ -1249,23 +1238,23 @@ a.tool .label {
     width: 12px;
     height: 12px;
     margin-left: 4px;
-    background: url(../images/icon-cart.png) center center no-repeat
+    background: url(../img/icon-cart.png) center center no-repeat
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .icon-cart {
-        background-image: url(../images/icon-cart@2x.png);
+        background-image: url(../img/icon-cart@2x.png);
         background-size: 12px auto
     }
 }
 
 #to-cart.opened .icon-cart {
-    background: url(../images/icon-cart-close.png) center center no-repeat
+    background: url(../img/icon-cart-close.png) center center no-repeat
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #to-cart.opened .icon-cart {
-        background-image: url(../images/icon-cart-close@2x.png);
+        background-image: url(../img/icon-cart-close@2x.png);
         background-size: 12px auto
     }
 }
@@ -1419,7 +1408,7 @@ body.notify.weekday #notify-bar {
     z-index: 2;
     width: 70px;
     height: 70px;
-    background: url(../images/icon-close-white.png) center center no-repeat #31935b;
+    background: url(../img/icon-close-white.png) center center no-repeat #31935b;
     text-indent: -9999px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
@@ -1433,7 +1422,7 @@ body.notify.weekday #notify-bar {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #notify-modal .close {
-        background-image: url(../images/icon-close-white@2x.png);
+        background-image: url(../img/icon-close-white@2x.png);
         background-size: 10px 10px
     }
 }
@@ -1936,14 +1925,14 @@ html.cart-open {
 #featured-slider .rsArrowRight .rsArrowIcn {
     left: 0;
     margin-left: 8px;
-    background: url(../images/gallery-right.png) 0 0 no-repeat
+    background: url(../img/gallery-right.png) 0 0 no-repeat
 }
 
 #featured-slider .rsArrowLeft .rsArrowIcn {
     left: inherit;
     right: 0;
     margin-left: 20px;
-    background: url(../images/gallery-left.png) 0 0 no-repeat
+    background: url(../img/gallery-left.png) 0 0 no-repeat
 }
 
 #featured-slider .rsBullets {
@@ -2022,7 +2011,7 @@ html.cart-open {
     right: 13px;
     width: 8px;
     height: 5px;
-    background: url(../images/arrow-down-black.png) center right no-repeat;
+    background: url(../img/arrow-down-black.png) center right no-repeat;
     content: ''
 }
 
@@ -2275,7 +2264,7 @@ html.cart-open {
     left: 0;
     right: 0;
     z-index: 0;
-    background: url(../images/product-shadow.png) top center no-repeat;
+    background: url(../img/product-shadow.png) top center no-repeat;
     background-size: 100% auto;
     height: 20px;
     opacity: 1;
@@ -2343,22 +2332,22 @@ html.cart-open {
 #product-images .rsArrowRight .rsArrowIcn {
     left: 0;
     margin-left: 0;
-    background: url(../images/gallery-right.png) 0 0 no-repeat
+    background: url(../img/gallery-right.png) 0 0 no-repeat
 }
 
 #product-images.gallery-images .rsArrowRight .rsArrowIcn {
-    background: url(../images/gallery-right-black.png) 0 0 no-repeat
+    background: url(../img/gallery-right-black.png) 0 0 no-repeat
 }
 
 #product-images .rsArrowLeft .rsArrowIcn {
     left: inherit;
     right: 0;
     margin-left: 30px;
-    background: url(../images/gallery-left.png) 0 0 no-repeat
+    background: url(../img/gallery-left.png) 0 0 no-repeat
 }
 
 #product-images.gallery-images .rsArrowLeft .rsArrowIcn {
-    background: url(../images/gallery-left-black.png) 0 0 no-repeat
+    background: url(../img/gallery-left-black.png) 0 0 no-repeat
 }
 
 #product-images .rsBullets {
@@ -2507,13 +2496,13 @@ html.cart-open {
     right: 13px;
     width: 8px;
     height: 5px;
-    background: url(../images/arrow-down-black.png) center right no-repeat;
+    background: url(../img/arrow-down-black.png) center right no-repeat;
     content: ''
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #product-action .select::after {
-        background-image: url(../images/arrow-down-black@2x.png);
+        background-image: url(../img/arrow-down-black@2x.png);
         background-size: 8px 5px
     }
 }
@@ -2618,7 +2607,7 @@ html.cart-open {
     right: 14px;
     width: 8px;
     height: 13px;
-    background: url(../images/icon-continue-white.png) 0 0 no-repeat;
+    background: url(../img/icon-continue-white.png) 0 0 no-repeat;
     content: ''
 }
 
@@ -2628,7 +2617,7 @@ html.cart-open {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #direct-checkout::after {
-        background: url(../images/icon-continue-white@2x.png);
+        background: url(../img/icon-continue-white@2x.png);
         background-size: 8px 13px
     }
 }
@@ -2889,13 +2878,13 @@ a.btn-facebook .icon {
     left: 0;
     width: 38px;
     height: 38px;
-    background: url(../images/icon-facebook-white.png) center center no-repeat;
+    background: url(../img/icon-facebook-white.png) center center no-repeat;
     border-right: 1px solid #fff
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     a.btn-facebook .icon {
-        background-image: url(../images/icon-facebook-white@2x.png);
+        background-image: url(../img/icon-facebook-white@2x.png);
         background-size: 10px auto
     }
 }
@@ -3518,7 +3507,7 @@ a.btn-facebook .label {
     right: 13px;
     width: 8px;
     height: 5px;
-    background: url(../images/arrow-down-black.png) center right no-repeat;
+    background: url(../img/arrow-down-black.png) center right no-repeat;
     content: ''
 }
 
@@ -3713,7 +3702,7 @@ a.btn-facebook .label {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .select-nice .select::after {
-        background-image: url(../images/arrow-down-black@2x.png);
+        background-image: url(../img/arrow-down-black@2x.png);
         background-size: 8px 5px
     }
 }
@@ -4073,23 +4062,23 @@ a.btn-facebook .label {
 }
 
 input.parsley-success, select.parsley-success, textarea.parsley-success {
-    background: url(../images/icon-form-success2.png) right center no-repeat #fff !important
+    background: url(../img/icon-form-success2.png) right center no-repeat #fff !important
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     input.parsley-success, select.parsley-success, textarea.parsley-success {
-        background-image: url(../images/icon-form-success@2x.png) !important;
+        background-image: url(../img/icon-form-success@2x.png) !important;
         background-size: 23px auto !important
     }
 }
 
 input.parsley-error, select.parsley-error, textarea.parsley-error {
-    background: url(../images/icon-form-error2.png) right center no-repeat #fff !important
+    background: url(../img/icon-form-error2.png) right center no-repeat #fff !important
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     input.parsley-error, select.parsley-error, textarea.parsley-error {
-        background-image: url(../images/icon-form-error@2x.png) !important;
+        background-image: url(../img/icon-form-error@2x.png) !important;
         background-size: 22px auto !important
     }
 }
@@ -4278,7 +4267,7 @@ footer a {
 }
 
 #social-fb {
-    background: url(../images/icon-facebook-black.png) center center no-repeat
+    background: url(../img/icon-facebook-black.png) center center no-repeat
 }
 
 .no-touch #social-fb:hover {
@@ -4287,13 +4276,13 @@ footer a {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #social-fb {
-        background-image: url(../images/icon-facebook-black@2x.png);
+        background-image: url(../img/icon-facebook-black@2x.png);
         background-size: 9px auto
     }
 }
 
 #social-in {
-    background: url(../images/icon-instagram-black.png) center center no-repeat
+    background: url(../img/icon-instagram-black.png) center center no-repeat
 }
 
 .no-touch #social-in:hover {
@@ -4302,13 +4291,13 @@ footer a {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #social-in {
-        background-image: url(../images/icon-instagram-black@2x.png);
+        background-image: url(../img/icon-instagram-black@2x.png);
         background-size: 16px auto
     }
 }
 
 #social-tw {
-    background: url(../images/icon-twitter-black.png) center center no-repeat
+    background: url(../img/icon-twitter-black.png) center center no-repeat
 }
 
 .no-touch #social-tw:hover {
@@ -4317,7 +4306,7 @@ footer a {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #social-tw {
-        background-image: url(../images/icon-twitter-black@2x.png);
+        background-image: url(../img/icon-twitter-black@2x.png);
         background-size: 15px auto
     }
 }
@@ -4956,7 +4945,7 @@ iframe[name="google_conversion_frame"] {
 
     #mobile-logo #logo {
         float: left;
-        background: url(../images/sneaker-district-weblogo-mobile@2x.png) center center no-repeat;
+        background: url(../img/sneaker-district-weblogo-mobile@2x.png) center center no-repeat;
         -webkit-transition: all 0.3s;
         -ms-transition: all 0.3s;
         transition: all 0.3s
@@ -6042,7 +6031,7 @@ img.rsImg {
     height: 100%;
     display: block;
     z-index: 20;
-    background: url(blank.gif)
+
 }
 
 .rsDefault, .rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs {
@@ -6344,7 +6333,6 @@ img.rsImg {
     box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
     background: #ACACAC;
     background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
-    background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
     background-image: linear-gradient(to bottom, #ACACAC, #BBB)
 }
 
@@ -6764,8 +6752,6 @@ img.rsImg {
 }
 
 .mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
-    background-image: url(mCSB_buttons.png);
-    background-repeat: no-repeat;
     opacity: 0.4;
     filter: "alpha(opacity=40)";
     -ms-filter: "alpha(opacity=40)"
