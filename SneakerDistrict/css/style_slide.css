@@ -4544,7 +4544,7 @@ iframe[name="google_conversion_frame"] {
     font-weight: 700;
     font-size: 18px;
     color: #000000;
-    letter-spacing: 0.25px;
+    letter-spacing: .25px;
     line-height: 28px
 }
 
@@ -5580,8 +5580,7 @@ body.page-canvas {
 
 #newsletter {
     background: #ddd;
-    padding: 40px 0;
-    padding-left: 240px
+    padding: 40px 0 40px 240px;
 }
 
 #newsletter .container {
@@ -5705,9 +5704,7 @@ body.page-canvas {
     -ms-transition: all 0.3s;
     transition: all 0.3s;
     cursor: pointer;
-    -webkit-transition: background 0.3s;
     -moz-transition: background 0.3s;
-    transition: background 0.3s
 }
 
 #newsletter .newsletter-signup .form-field button[type="submit"]:hover {
@@ -5969,7 +5966,6 @@ body.page-canvas {
 
 .rsTabs, .rsThumbs {
     -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: transparent
 }
 
 .rsVideoContainer {
