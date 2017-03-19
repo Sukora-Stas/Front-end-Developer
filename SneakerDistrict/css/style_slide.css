@@ -1093,7 +1093,7 @@ nav#sub-nav ul li a {
     right: 0;
     left: 240px;
     z-index: 99999;
-    height: 50px;
+    height: 70px;
     width: auto !important;
     background: #222
 }
