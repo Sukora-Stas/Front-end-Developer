@@ -1111,14 +1111,14 @@ nav#sub-nav ul li a {
 
 .usps a {
     float: left;
-    height: 50px;
+    height: 70px;
     color: #fff
 }
 
 .usps .usp {
     float: left;
-    height: 50px;
-    padding: 0 20px;
+    height: 70px;
+    padding: 5px 20px 0 20px;
     border-right: 1px solid #334;
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1154,22 +1154,23 @@ nav#sub-nav ul li a {
 
 .usps .usp .label {
     float: left;
-    padding: 10px 0
+    padding: 17px 0
 }
 
 .tools {
     float: right;
     font-family: 'Rajdhani', sans-serif;
     color: #fff;
-    font-size: 12px;
+    height: 70px;
     font-weight: 500;
     text-transform: uppercase
 }
 
 .tool {
+    color: lightgray;
     float: left;
-    height: 50px;
-    line-height: 50px;
+    height: 70px;
+    line-height: 70px;
     padding: 0 20px;
     border-left: 1px solid #334;
     -webkit-transition: all 0.3s;
@@ -1178,7 +1179,12 @@ nav#sub-nav ul li a {
     cursor: pointer
 }
 
+.tool-contact {
+    display: block
+}
+
 .tool:hover {
+    color:white;
     background: #333
 }
 
@@ -5039,9 +5045,7 @@ iframe[name="google_conversion_frame"] {
         display: none
     }
 
-    .usp-contact {
-        display: block
-    }
+
 
     .usps {
         height: 60px
