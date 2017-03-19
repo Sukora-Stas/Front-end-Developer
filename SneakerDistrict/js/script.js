@@ -24090,12 +24090,6 @@ $(window).load(function () {
  */
 
 $(function () {
-
-    console.log('Hi there, welcome at Sneaker District');
-    console.log('%cWebshop by Lama Lama', 'color: #2E283C; font-size: 12px; font-family: Helvetica, Arial, sans-serif;font-weight:bold;');
-    console.log('%chttps://lamalama.nl', 'color: #2E283C; font-size: 12px; font-family: Helvetica, Arial, sans-serif;');
-
-
     winW = $(window).width();
     winH = $(window).height();
     sidebarW = $('#sidebar').width();
