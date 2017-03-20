@@ -15,6 +15,7 @@ body {
     background-color: greenyellow;
     border: solid red 2px;
     margin-left: 260px;
+
 }
 
 #grid-container a {
@@ -40,7 +41,6 @@ body {
     width: 306px;
     border: solid #d8d8d8 1px;
     font-size: 16px;
-
 }
 
 .catalog-item h3 {
