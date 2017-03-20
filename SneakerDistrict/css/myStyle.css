@@ -73,6 +73,9 @@
     color: #000000;
 }
 
+.top .catalog-item {
+    border-top: none;
+}
 .item {
     display: flex;
     flex-direction: row;
