@@ -568,7 +568,7 @@ header {
     left: 0;
     bottom: 0;
     z-index: 9999;
-    width: 240px;
+    width: 260px;
     background: #000;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
@@ -1184,7 +1184,7 @@ nav#sub-nav ul li a {
 }
 
 .tool:hover {
-    color:white;
+    color:lightgreen;
     background: #333
 }
 
@@ -2086,7 +2086,7 @@ html.cart-open {
 
 #grid {
     float: left;
-    width: 100%;
+    /*width: 100%;*/
     min-height: 160px;
     padding-left: 240px
 }
@@ -4984,7 +4984,7 @@ iframe[name="google_conversion_frame"] {
         position: fixed;
         left: -100%;
         width: 100%;
-        max-width: 240px
+        max-width: 260px
     }
 
     #sidebar #logo {

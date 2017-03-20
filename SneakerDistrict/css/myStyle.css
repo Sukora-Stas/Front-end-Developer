@@ -1,0 +1,89 @@
+body {
+    overflow: hidden;
+}
+
+.nike {
+
+    height: 300px;
+}
+
+.contener-brand {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: greenyellow;
+    border: solid red 2px;
+    margin-left: 260px;
+}
+
+#grid-container a {
+    margin-top: 30px;
+}
+
+.sub-menu {
+    overflow-x: hidden;
+}
+
+.brand-name {
+    margin: 30px 0 30px 60px;
+    line-height: 40px;
+    font-size: 25px;
+    font-family: 'Rajdhani', sans-serif;
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.catalog-item {
+    width: 306px;
+    border: solid #d8d8d8 1px;
+    font-size: 16px;
+
+}
+
+.catalog-item h3 {
+    font-size: 16px;
+    color: #000000;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 16px 16px 16px;
+}
+
+.item h3 {
+    margin: 0;
+}
+
+.item_btn {
+    background-color: #a38b70;
+    border: solid 1px #a38b70;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.item_btn:hover {
+    color: white;
+    background-color: #8d745a;
+    border: solid 1px #8d745a;
+}
+
+.item_btn:active {
+    color: white;
+    background-color: #8d745a;
+    border: solid 1px #8d745a;
+    opacity: .5;
+}
+
+.i_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
