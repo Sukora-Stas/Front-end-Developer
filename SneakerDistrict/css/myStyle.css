@@ -19,6 +19,7 @@
 }
 
 .brand {
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -31,6 +32,10 @@
     overflow-x: hidden;
 }
 
+hr {
+    width: 100%;
+    color: lightgray;
+}
 .font {
     font-family: 'Rajdhani', sans-serif;
     color: gray;
@@ -46,6 +51,10 @@
     text-align: center;
 }
 
+.brand-name:hover, .sex-name:hover, .item:hover {
+    cursor: default;
+}
+
 .sex-name {
     font-size: 13px;
     display: block;
@@ -54,25 +63,50 @@
 }
 
 .catalog-item {
-    width: 306px;
+    /*width: 306px;*/
+    width: 100%;
     border: solid #d8d8d8 1px;
     font-size: 16px;
     border-left: none;
+    background-color: white;
 }
 
 .catalog-item img {
+    transition: all .7s ease;
+    position: relative;
     width: 220px;
     height: 202px;
     align-items: center;
 }
+
+.catalog-item img:hover {
+    transition: all 2s ease;
+    transform: scale(1.1);
+}
+
+
+
 .catalog-item:first-of-type {
     border-left: solid #d8d8d8 1px;
 }
+
 .catalog-item h3 {
     font-size: 16px;
     color: #000000;
 }
-
+.catalog-item:hover{
+    position: relative;
+    transition: all .7s ease;
+    transform: scale(1.25);
+    border: solid #d8d8d8 1px !important;
+    z-index: 1000;
+}
+.catalog-item:hover:first-of-type{
+    left:+50px;
+}
+.catalog-item:hover:last-of-type{
+    left:-50px;
+}
 .top .catalog-item {
     border-top: none;
 }
