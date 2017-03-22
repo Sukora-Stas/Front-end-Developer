@@ -127,6 +127,12 @@ hr {
 .tools i{
     padding-top: 18px;
 }
+
+.usps .label {
+    font-size: 12px;
+    font-weight: normal;
+}
+
 .item {
     display: flex;
     flex-direction: column;
