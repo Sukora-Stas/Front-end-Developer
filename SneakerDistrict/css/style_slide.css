@@ -183,7 +183,7 @@ html {
 }
 
 *, *:before, *:after {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
 body {
@@ -568,7 +568,7 @@ header {
     left: 0;
     bottom: 0;
     z-index: 9999;
-    width: 260px;
+    width: 250px;
     background: #000;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
@@ -1163,7 +1163,8 @@ nav#sub-nav ul li a {
     color: #fff;
     height: 70px;
     font-weight: 500;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center !important;
 }
 
 .tool {
@@ -1176,7 +1177,8 @@ nav#sub-nav ul li a {
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
-    cursor: pointer
+    cursor: pointer;
+    text-align: center !important;
 }
 
 .tool-contact {
