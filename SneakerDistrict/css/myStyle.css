@@ -1,12 +1,7 @@
-.nike {
-
-    height: 300px;
-}
-
 .contener-brand {
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-left: 260px;
 
@@ -44,9 +39,9 @@ hr {
 }
 
 .brand-name {
-    margin: 0 0 0 30px;
+    margin: 20px 0 0 30px;
     line-height: 40px;
-    font-size: 25px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
 }
@@ -123,7 +118,10 @@ hr {
 .item h3 {
     margin: 0;
 }
-
+.btn{
+    color:white !important;
+    margin-bottom: 10px !important;
+}
 .item_btn {
     background-color: #a38b70;
     border: solid 1px #a38b70;
@@ -135,13 +133,13 @@ hr {
 }
 
 .item_btn:hover {
-    color: white;
+    color: white !important;
     background-color: #8d745a;
     border: solid 1px #8d745a;
 }
 
 .item_btn:active {
-    color: white;
+    color: white !important;
     background-color: #8d745a;
     border: solid 1px #8d745a;
     opacity: .5;
