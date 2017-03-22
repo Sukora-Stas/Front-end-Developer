@@ -49,9 +49,13 @@ hr {
 .brand-name:hover, .sex-name:hover, .item:hover {
     cursor: default;
 }
-
+.brand-item{
+    color: lightgray !important;
+    text-align: left !important;
+    margin-bottom: 5px;
+}
 .sex-name {
-    font-size: 13px;
+    font-size: 25px;
     display: block;
     text-align: start;
     margin: 20px 60px;
@@ -110,13 +114,23 @@ hr {
 }
 .item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    text-align: left;
     margin: 16px 16px 16px 16px;
 }
 
 .item h3 {
     margin: 0;
+    font-size: 20px;
+
+}
+.item b{
+    text-align: right;
+    color: gray;
+    font-size: 15px;
+
+    margin-top:10px;
 }
 .btn{
     color:white !important;
