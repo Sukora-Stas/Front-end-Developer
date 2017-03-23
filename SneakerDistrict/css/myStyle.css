@@ -107,6 +107,10 @@ hr {
     font-size: 16px;
     color: #000000;
 }
+
+.color {
+    background-color: yellow;
+}
 .catalog-item:hover{
     position: relative;
     transition: all .7s ease;

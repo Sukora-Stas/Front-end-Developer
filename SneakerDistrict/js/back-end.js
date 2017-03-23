@@ -8,6 +8,20 @@ $(function () {
             $('#table_date tr').removeClass('zebra');
         }
     );
+
+
+    $('#test').hover(
+        function () {
+            $('.catalog-item:hover').addClass('color');
+        },
+        function () {
+            $('.catalog-item').removeClass('color');
+        }
+    );
+
+
+
+
     $('#table_date tr:first-child').hover(
         function () {
             $('#table_date tr').removeClass('zebra');
