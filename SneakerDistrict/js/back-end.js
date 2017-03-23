@@ -10,15 +10,20 @@ $(function () {
     );
 
 
+    // $('.catalog-item').not().hover(
+    //
+    //     function () {
+    //         $('.block').removeClass('none');
+    //         $('.none:hover').removeClass('block');
+    //     }
+    // );
+
     $('.catalog-item').hover(
         function () {
-            $('.none:hover').addClass('color');
-        },
-        function () {
-            $('.none').removeClass('color');
+            $('.block').css('display', 'none');
+            $('.none').css('display', 'block');
         }
     );
-
 
 
 

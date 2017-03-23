@@ -96,6 +96,7 @@ hr {
 #basic-filters-wrapper{
     padding: 0;
 }
+
 .container{
     padding: 0!important;
 }
@@ -108,9 +109,14 @@ hr {
     color: #000000;
 }
 
-.color {
+.block{
+    display: block;
+}
+
+.none{
     display: none;
 }
+
 
 .catalog-item:hover{
     position: relative;
