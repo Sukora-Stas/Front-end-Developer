@@ -109,8 +109,9 @@ hr {
 }
 
 .color {
-    background-color: yellow;
+    display: none;
 }
+
 .catalog-item:hover{
     position: relative;
     transition: all .7s ease;

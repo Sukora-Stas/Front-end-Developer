@@ -10,12 +10,12 @@ $(function () {
     );
 
 
-    $('#test').hover(
+    $('.catalog-item').hover(
         function () {
-            $('.catalog-item:hover').addClass('color');
+            $('.none:hover').addClass('color');
         },
         function () {
-            $('.catalog-item').removeClass('color');
+            $('.none').removeClass('color');
         }
     );
 
