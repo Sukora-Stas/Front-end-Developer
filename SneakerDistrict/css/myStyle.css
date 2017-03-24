@@ -123,14 +123,14 @@ hr {
     transition: all .7s ease;
     transform: scale(1.25);
     border: solid #d8d8d8 1px !important;
-    /*z-index: 1000;*/
+    z-index: 400;
 }
 .catalog-item:hover:first-of-type{
-    left:+50px;
+    left:+41px;
 }
 
 .catalog-item:hover:last-of-type{
-    left:-50px;
+    left:-41px;
 }
 .top .catalog-item {
     border-top: none;
@@ -203,19 +203,20 @@ hr {
 
 #slideout {
     position: fixed;
-    top: 50%;
+    top: 80%;
     right: 0;
     width: 35px;
     padding: 12px 0;
     text-align: center;
     background: #6DAD53;
     transition: 1s right ease;
+    z-index: 500;
 }
 
 #slideout_inner {
     position: fixed;
-    top: 50%;
-    right: -250px;
+    top: 80%;
+    right: -200px;
     background: #6DAD53;
     width: 200px;
     padding: 25px;
@@ -231,7 +232,7 @@ hr {
 }
 
 #slideout:hover {
-    right: 250px;
+    right: 200px;
 }
 
 #slideout:hover #slideout_inner {

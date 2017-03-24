@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/tarampampam/jquery.textmistake/master/src/jquery.textmistake.js"></script>
+
     <script src="js/back-end.js"></script>
 </head>
 <body>
@@ -1871,11 +1873,10 @@
 <div id="slideout">
     <img src="img/feedback.png" alt="Отправить отзыв"/>
     <div id="slideout_inner">
-        <form>
-            <label>
-                <textarea></textarea>
-            </label>
-            <input type="submit" value="Отправить отзыв"/>
+        <form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
+            Enter Friend's Email:
+            <input name="pmSubject" id="pmSubject" type="text" maxlength="64" style="width:98%;" />
+            <input name="pmSubmit" type="submit" value="Invite" />
         </form>
     </div>
 </div>
