@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     $('.catalog-item').mouseenter(
         function () {
     $('.catalog-item:hover .block').css('display', 'none');
@@ -13,6 +12,5 @@ $(document).ready(function () {
             $('.block').css('display', 'block');
         }
     );
-
 
 });

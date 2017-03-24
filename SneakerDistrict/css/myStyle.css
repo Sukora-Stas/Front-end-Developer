@@ -123,7 +123,7 @@ hr {
     transition: all .7s ease;
     transform: scale(1.25);
     border: solid #d8d8d8 1px !important;
-    z-index: 1000;
+    /*z-index: 1000;*/
 }
 .catalog-item:hover:first-of-type{
     left:+50px;
@@ -199,4 +199,41 @@ hr {
 
 #topbar {
     left: 250px;
+}
+
+#slideout {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 35px;
+    padding: 12px 0;
+    text-align: center;
+    background: #6DAD53;
+    transition: 1s right ease;
+}
+
+#slideout_inner {
+    position: fixed;
+    top: 50%;
+    right: -250px;
+    background: #6DAD53;
+    width: 200px;
+    padding: 25px;
+    height: 130px;
+    transition: 1s right ease;
+    text-align: left;
+}
+
+#slideout_inner textarea {
+    width: 190px;
+    height: 100px;
+    margin-bottom: 6px;
+}
+
+#slideout:hover {
+    right: 250px;
+}
+
+#slideout:hover #slideout_inner {
+    right: 0;
 }
