@@ -20,6 +20,32 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/tarampampam/jquery.textmistake/master/src/jquery.textmistake.js"></script>
 
     <script src="js/back-end.js"></script>
+
+    <script type="text/javascript">
+        var xmlhttp = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+        xmlhttp.open('POST', 'https://mandrillapp.com/api/1.0/messages/send.json');
+        xmlhttp.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4) {
+                if(xmlhttp.status == 200) alert('Mail sended!')
+                else if(xmlhttp.status == 500) alert('Check apikey')
+                else alert('Request error');
+            }
+        };
+
+
+
+        xmlhttp.send(JSON.stringify({'key': 'x4VpTFGkVPhLqv4eEh2_vA',
+            'message': {
+                'from_email': 'stasiksukora@mail.ru',
+                'to': [{'email': 'stasiksukora@mail.ru', 'type': 'to'}],
+                'autotext': 'true',
+                'subject': 'Yeah!',
+                'html': '<h1>Its work!</h1>'
+            }}));
+
+
+    </script>
 </head>
 <body>
 
