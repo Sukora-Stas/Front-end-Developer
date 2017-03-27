@@ -75,9 +75,16 @@ hr {
 .catalog-item img {
     transition: all .7s ease;
     position: relative;
-    width: 220px;
-    height: 202px;
+    width: 220px !important;
+    height: 202px !important;
     align-items: center;
+}
+
+.none img{
+    width: 280px !important;
+    height: 245px !important;
+    align-items: center;
+    margin-left:7px;
 }
 
 .catalog-item img:hover {
@@ -237,4 +244,27 @@ hr {
 
 #slideout:hover #slideout_inner {
     right: 0;
+}
+
+.carousel{
+    height:315px;
+}
+
+.carousel-inner .item{
+    text-align: center;
+}
+
+.carousel-control.left {
+    background-image: none !important;
+}
+.carousel-control.right {
+    background-image: none !important;
+}
+
+.glyphicon:hover{
+    color: gray;
+}
+
+.glyphicon:active{
+    color: lightgray;
 }
