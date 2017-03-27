@@ -273,3 +273,21 @@ hr {
 .item {
     margin-top: 0;
 }
+
+#main-nav li:hover {
+    background-color: rgba(122, 132, 133, 0.44);
+    transition: .5s all ease;
+}
+
+#main-nav li:active {
+    background-color: rgba(122, 132, 133, 0.8);
+}
+
+.filter-row a:hover {
+    background-color: rgba(122, 132, 133, 0.44);
+    transition: .5s all ease;
+}
+
+.filter-row a:active {
+    background-color: rgba(122, 132, 133, 0.8);
+}
