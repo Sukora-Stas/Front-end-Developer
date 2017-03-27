@@ -219,6 +219,7 @@ hr {
     background: #6DAD53;
     transition: 1s right ease;
     z-index: 500;
+    border-radius: 20px 0 0 20px;
 }
 
 #slideout_inner {
