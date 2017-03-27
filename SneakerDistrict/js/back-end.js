@@ -20,18 +20,33 @@ $(document).ready(function () {
         }
     );
 
-
+// показать только мужчин
     var check = 0;
     $('.btn-man').click(function () {
             if (check === 0) {
                 $('.woman-action').addClass('none');
-                $('.btn-man span').css('background-color','lightgray');
+                $('.btn-man').css('background-color', 'lightgray');
                 $('.btn-man span').css('color','black');
                 check = 1;
             } else {
                 $('.woman-action').removeClass('none');
-                $('.btn-man span').css('background-color','black');
+                $('.btn-man').css('background-color', 'black');
                 $('.btn-man span').css('color','white');
+                check = 0;
+            }
+        }
+    )
+// показать только женщин
+    $('.btn-woman').click(function () {
+            if (check === 0) {
+                $('.man-action').addClass('none');
+                $('.btn-woman').css('background-color', 'lightgray');
+                $('.btn-woman span').css('color', 'black');
+                check = 1;
+            } else {
+                $('.man-action').removeClass('none');
+                $('.btn-woman').css('background-color', 'black');
+                $('.btn-woman span').css('color', 'white');
                 check = 0;
             }
         }
