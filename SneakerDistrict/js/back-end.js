@@ -13,12 +13,28 @@ $(document).ready(function () {
     $('.catalog-item:hover .none').css('display', 'block');
 }
     );
-
     $('.catalog-item').mouseleave(
         function () {
             $('.none').css('display', 'none');
             $('.block').css('display', 'block');
         }
     );
+
+
+    var check = 0;
+    $('.btn-man').click(function () {
+            if (check === 0) {
+                $('.woman-action').addClass('none');
+                $('.btn-man span').css('background-color','lightgray');
+                $('.btn-man span').css('color','black');
+                check = 1;
+            } else {
+                $('.woman-action').removeClass('none');
+                $('.btn-man span').css('background-color','black');
+                $('.btn-man span').css('color','white');
+                check = 0;
+            }
+        }
+    )
 
 });
