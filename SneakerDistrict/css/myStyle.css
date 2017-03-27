@@ -24,6 +24,7 @@
 }
 
 .sub-menu {
+    width: 270px !important;
     overflow-x: hidden;
 }
 
@@ -206,7 +207,7 @@ hr {
 }
 
 #topbar {
-    left: 250px;
+    left: 255px;
 }
 
 #slideout {
@@ -282,6 +283,10 @@ hr {
 
 #main-nav li:active {
     background-color: rgba(122, 132, 133, 0.8);
+}
+
+.filter-row {
+    margin-left: 6px;
 }
 
 .filter-row button{

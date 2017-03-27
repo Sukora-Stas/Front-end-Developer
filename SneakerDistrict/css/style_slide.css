@@ -568,7 +568,7 @@ header {
     left: 0;
     bottom: 0;
     z-index: 9999;
-    width: 250px;
+    width: 255px;
     background: #000;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
@@ -1064,7 +1064,7 @@ nav ul li a span.label {
     left: 0;
     bottom: 0;
     z-index: 9998;
-    width: 240px;
+    width: 270px;
     background: #222;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
