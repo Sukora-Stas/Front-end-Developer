@@ -50,6 +50,26 @@ $(document).ready(function () {
                 check = 0;
             }
         }
-    )
+    );
+
+    // отоброжения бренда
+
+    // NIKE
+    var NIKE=0;
+    $('#nav-item-nike').click(function () {
+    if(NIKE===0){
+        $('.brand').addClass('none');
+        $('.NIKE').removeClass('none');
+        $('#nav-item-nike').css('background-color', 'lightgray');
+        $('#nav-item-nike .label').css('color', 'black');
+        NIKE=1;
+    } else{
+        $('.brand').removeClass('none');
+        $('#nav-item-nike').css('background-color', 'black');
+        $('#nav-item-nike .label').css('color', 'white');
+        NIKE=0;
+    }
+    })
+
 
 });
