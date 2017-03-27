@@ -1,5 +1,4 @@
-// document).ready(
-$(function () {
+$(document).ready(function () {
 
     $('.catalog-item').mouseenter(
         function () {
@@ -21,9 +20,11 @@ $(function () {
                 $('.woman-action').addClass('none');
                 $('.btn-man').css('background-color', 'lightgray');
                 $('.btn-man span').css('color', 'black');
+                // $('.man-action').addClass('block');
                 check = 1;
             } else {
                 $('.woman-action').removeClass('none');
+                // $('.woman-action').addClass('block');
                 $('.btn-man').css('background-color', 'black');
                 $('.btn-man span').css('color', 'white');
                 check = 0;
