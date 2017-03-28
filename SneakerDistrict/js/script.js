@@ -2,17 +2,19 @@ $(document).ready(function () {
 
 
     var colId = 1;
-
     var id = 1;
     $('.flex').each(function () {
         var m = $('#' + id + ' .catalog-item').size();
-
         console.log('#' + id);
         console.log('cat: ' + m);
 
         if (colId == id) {
-            if (m == 4)
-                $('#' + id).css('width', '100%');
+            if (m == 4) {
+                $('#' + id).css('width', '80%');
+            }
+            if (m == 3) {
+                $('#' + id).css('width', '60%');
+            }
         }
 
 
