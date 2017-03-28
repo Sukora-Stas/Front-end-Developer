@@ -41,6 +41,11 @@ hr {
     width: 100%;
     color: lightgray;
 }
+.page{
+    padding-left: 400px;
+    max-width: 1400px;
+    text-transform: none !important;
+}
 .font {
     font-family: 'Rajdhani', sans-serif;
     color: gray;
@@ -259,7 +264,7 @@ hr {
 }
 
 .carousel{
-    height:315px;
+    height:290px;
 }
 
 .carousel-inner .item{
