@@ -11,17 +11,22 @@ $(document).ready(function () {
         if (colId == id) {
             if (m == 4) {
                 $('#' + id).css('width', '80%');
+                // // id++;
+                // $('.top .catalog-item:last-child').css('border','1px');
+                // $('.top .catalog-item:last-child').css('border-color','#d8d8d8');
+                // $('.top .catalog-item:last-child').css('border-style','solid');
+                // // id--;
             }
             if (m == 3) {
                 $('#' + id).css('width', '60%');
             }
+            if (m == 2) {
+                $('#' + id).css('width', '40%');
+            }
+            if (m == 1) {
+                $('#' + id).css('width', '20%');
+            }
         }
-
-
-        // alert(colId);
-        // alert(colBrand);
-
-
         colId++;
         id++
     });
