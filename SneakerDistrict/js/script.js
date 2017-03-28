@@ -1,5 +1,34 @@
 $(document).ready(function () {
 
+
+    var colId = 1;
+
+    var id = 1;
+    $('.flex').each(function () {
+        var m = $('#' + id + ' .catalog-item').size();
+
+        console.log('#' + id);
+        console.log('cat: ' + m);
+
+        if (colId == id) {
+            if (m == 4)
+                $('#' + id).css('width', '100%');
+        }
+
+
+        // alert(colId);
+        // alert(colBrand);
+
+
+        colId++;
+        id++
+    });
+
+
+
+
+
+
     $('.catalog-item').mouseenter(
         function () {
             $('.catalog-item:hover .block').css('display', 'none');
