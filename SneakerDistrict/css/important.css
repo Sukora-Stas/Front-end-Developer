@@ -9,6 +9,7 @@
     height: 550px;
     border-radius: 30px;
     width: 800px;
+    overflow: hidden;
 }
 .item  img{
     height: 500px;
