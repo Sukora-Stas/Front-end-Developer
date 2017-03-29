@@ -84,6 +84,7 @@ $(document).ready(function () {
     );
 
     // отоброжения бренда
+    // TODO: сокротить код
 
     // NIKE
     var NIKE = 0;
