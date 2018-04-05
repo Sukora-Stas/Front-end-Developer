@@ -2,6 +2,17 @@ function message(text) {
     console.log(text);
 }
 
+var nameF;
+
+var human = {
+   name : "Петя"
+}
+
+for (var key in human) {
+//nameF = human[key];    
+}
+
+message(nameF);
 
 
 /*
