@@ -1,5 +1,6 @@
 /* eslint no-var: "off" */
 /* eslint no-unused-vars: "off" */
+
 /* eslint max-len: "off" */
 
 /**
@@ -23,6 +24,12 @@ function log(a) {
  */
 function fizzBuzz() {
     /* Ваше решение */
+    for (var i = 1; i <= 100; i++) {
+        (i % 5 == 0 && i % 3 == 0 && log("FizzBuzz")) ||
+        (i % 3 == 0 && log("Fizz")) ||
+        (i % 5 == 0 && log("Buzz")) ||
+        log(i);
+    }
 }
 
 
