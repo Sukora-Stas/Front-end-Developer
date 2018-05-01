@@ -57,6 +57,19 @@ function isPolindrom(textString) {
  */
 function drawCalendar(year, month, htmlEl) {
 
+    var day = new Date(year, month - 1);
+
+    var table = `<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr> </table>`;
+
+    for (var i = 0; i < getDay(d); i++) {
+        table += "<td></td>";
+    }
+
+
+}
+
+function getDay(date) {
+    return date.getDay() === 0 ? 7 : date.getDay() - 1;
 
 
 }
