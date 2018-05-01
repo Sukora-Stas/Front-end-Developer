@@ -59,19 +59,31 @@ function drawCalendar(year, month, htmlEl) {
 
     var day = new Date(year, month - 1);
 
-    var table = `<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr> </table>`;
+    var table = `<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>`;
 
-    for (var i = 0; i < getDay(d); i++) {
+    for (var i = 0; i < getDay(day); i++) {
         table += "<td></td>";
     }
 
+    while (day.getMonth() == month - 1) {
+        table += "<td>" + day.getDate() + "</td>";
+        if (getDay(day) % 7 == 6) {
+            table += "</tr><tr>";
+        }
+        day.setDate(day.getDate() + 1);
+    }
 
+    if (getDay(day) != 0) {
+        for (var i = getDay(day); i < 7; i++) {
+            table += "<td></td>";
+        }
+    }
+    table += "</tr></table>";
+    htmlEl.innerHTML = table;
 }
 
 function getDay(date) {
     return date.getDay() === 0 ? 7 : date.getDay() - 1;
-
-
 }
 
 
