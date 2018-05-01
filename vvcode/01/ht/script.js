@@ -42,11 +42,7 @@ function fizzBuzz() {
  */
 function isPolindrom(textString) {
 
-    if (textString === textString.split("").reverse().join("")) {
-        return true;
-    }
-    return false;
-
+    return (textString === textString.split("").reverse().join("")) ? true : false;
 
 }
 
