@@ -42,7 +42,7 @@ function fizzBuzz() {
  */
 function isPolindrom(textString) {
 
-    return (textString === textString.split("").reverse().join("")) ? true : false;
+    return textString === textString.split("").reverse().join("");
 
 }
 
@@ -56,7 +56,9 @@ function isPolindrom(textString) {
  * @param {external:HTMLElement} htmlEl
  */
 function drawCalendar(year, month, htmlEl) {
-    /* Ваше решение */
+
+
+
 }
 
 
