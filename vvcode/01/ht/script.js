@@ -96,6 +96,12 @@ function getDay(date) {
  * @return {boolean} идентичны ли параметры по содержимому
  */
 function isDeepEqual(objA, objB) {
-    /* Ваше решение */
-    return undefined;
+    if (typeof (objA) !== typeof (objB)) return false;
+    if (typeof (objA) !== 'object') return objA === objB;
+    if (Array.isArray(objA) != Array.isArray(objB)) return false;
+    if (Object.keys(objA).length !== Object.keys(objB).length) return false;
+    for (var key in objA) {
+        if (!isDeepEqual(objA[key], objB[key])) return false;
+    }
+    return true;
 }
